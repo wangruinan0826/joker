@@ -25,6 +25,7 @@
             line-height: 30px;
             margin-right: 5px;
         }
+        /*本来就是针对Link A的，给它们设置居中等；为了使Link A可以在划过时出现手指符号，才嵌套上了a标签的*/
         #list .item  a {
             color: #fff;
             text-decoration: none;
@@ -37,14 +38,14 @@
          #list .item:hover{
              background: orange;
          }
-        #list .submenu{
+         #list .submenu{
             display: none;
         }
-        #list .item li{
+         #list .submenu li{
             background: #cccccc;
             cursor: pointer;
         }
-        #list .item li:hover{
+         #list .submenu li:hover{
             background: #999;
         }
         #list .item:hover .submenu{
