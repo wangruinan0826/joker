@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+    <!--标题-->
+        <h1>唯创网讯</h1>
+    <!--锚点，超链接-->
+        <a href="http://www.baidu.com" target="_blank">百度一下</a>
+    <!--href a标签的属性-->
+    <!--target 空白页，保留当前网页-->
+    <!--有序列表-->
+        <ol>
+            <li>html</li>
+            <li>css</li>
+            <li>javascript</li>
+            <li><a href="">淘宝</a></li>
+        </ol>
+    <!--无序列表-->
+        <ul>
+            <li>html</li>
+            <li>css</li>
+            <li>javascript</li>
+        </ul>
+    <!--图片  绝对路径、相对路径（大多数）-->
+        <img src="imgs/pic.jpg" alt="图片加载失败" title="这是一张图片">
+        <a href="">
+            <img src="imgs/pic.jpg" alt="图片加载失败" title="这是一张图片">
+        </a>
+    <!--alt  图片加载失败提示-->
+    <!--表格-->
+        <table border="1">
+            <tr>
+                <td>11</td>
+                <td rowspan="2">22</td>
+                <!--rowspan 跨行-->
+            </tr>
+            <tr>
+                <td>33</td>
+            </tr>
+        </table>
+        <table border="1">
+            <tr>
+                <td colspan="2">11</td>
+                <!--colspan 跨列-->
+            </tr>
+            <tr>
+                <td>33</td>
+                <td>44</td>
+            </tr>
+        </table>
+    <!--div+css 布局专用div标签-->
+    <!--所有元素都要有对应的标签属性，否则会找不到，通过id等属性来找-->
+        <div id="div1">这是一个div</div>
+        <div id="div2">这是一个div</div>
+        <div>这是一张<span style="color: red">图片</span>啊！</div>
+    <!--div自己占一行，span不会占行-->
+        <p>这是一段文章</p>
+    <!--p标签一般包含a标签，span标签这种不会独占一行的标签，而不能包含div标签，否则会出问题-->
+    </body>
+</html>
