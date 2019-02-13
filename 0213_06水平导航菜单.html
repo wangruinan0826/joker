@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>水平导航菜单</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        #list{
+            width: 420px;
+            /*给父元素宽度，否则会造成子元素的塌陷问题*/
+            height: 30px;
+        }
+        #list .item{
+            width: 100px;
+            height: 30px;
+            background: #ff0000;
+            float: left;
+            text-align: center;
+            line-height: 30px;
+            margin-right: 5px;
+        }
+        #list .item  a {
+            color: #fff;
+            text-decoration: none;
+            width: 100px;
+            height: 30px;
+            display: block;
+            /*将行级元素a转换为块级元素，使其可以设置宽高，从而使a充满整个item，这样可以使鼠标悬停在item的红色区域时也能
+            变成手指图标*/
+        }
+         #list .item:hover{
+             background: orange;
+         }
+        #list .submenu{
+            display: none;
+        }
+        #list .item li{
+            background: #cccccc;
+            cursor: pointer;
+        }
+        #list .item li:hover{
+            background: #999;
+        }
+        #list .item:hover .submenu{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul id="list">
+        <li class="item"><a href="">Link A</a></li>
+        <li class="item"><a href="">Link B</a>
+            <ul class="submenu">
+                <li>001</li>
+                <li>002</li>
+                <li>003</li>
+                <li>004</li>
+            </ul>
+        </li>
+        <li class="item"><a href="">Link C</a></li>
+        <li class="item"><a href="">Link D</a></li>
+    </ul>
+</body>
+</html>
