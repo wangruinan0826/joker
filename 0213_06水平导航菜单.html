@@ -26,8 +26,11 @@
             line-height: 30px;
             margin-right: 5px;
         }
-        /*text-align:center是给li加的，不是给a加的。是给li中的文本、行级元素加的。a是行级元素，内容撑开，已经占满a，
-        因此不能再设置水平居中。可以将a→block为块级元素，设置宽高后就可以设置水平居中了。*/
+        /*text-align:center是给li。item加的，不是给a加的。是给li.item中的文本、行级元素加的。a是行级元素，内容撑开，
+        已经占满a，因此不能再设置水平居中。可以将a→block为块级元素，设置宽高后就可以设置水平居中了。
+        →→还是给list.item设置水平垂直居中更好，因为list.item下的子菜单submenu也需要水平垂直居中。如果给a标签设置居中，
+        那么子菜单还需要另外设置居中。
+        */
         #list .item  a {
             color: #fff;
             text-decoration: none;
