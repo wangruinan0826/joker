@@ -13,8 +13,9 @@
         }
         #list{
             width: 420px;
-            /*给父元素宽度，否则会造成子元素的塌陷问题*/
+            /*给父元素设置宽度，否则会造成子元素的塌陷问题。不设置宽度的话，浏览器宽度调整时会变化。*/
             height: 30px;
+            /*给父元素设置高度，否则会造成子元素的塌陷问题。不设置高度的话，下面的p标签会上浮。*/
         }
         #list .item{
             width: 100px;
@@ -67,5 +68,6 @@
         <li class="item"><a href="">Link C</a></li>
         <li class="item"><a href="">Link D</a></li>
     </ul>
+    <p>12345</p>
 </body>
 </html>
