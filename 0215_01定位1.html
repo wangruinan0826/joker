@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            body{
+                margin: 0;
+                height: 2000px;
+            }
+            .box{
+                width: 200px;
+                height: 200px;
+            }
+            .box1{
+                background: #ff0000;
+            }
+            .box2{
+                background: #00ff00;
+                /*position: relative;*/
+                /*top: 50px;*/
+                /*left: 50px;*/
+                position: absolute;
+                top: 50px;
+                left: 50px;
+                /*绝对定位脱离文档流，因此下面的黄色div会上移。*/
+            }
+            .box3 {
+                background: #ffff00;
+            }
+            .box4{
+                width: 100px;
+                height: 100px;
+                background: #cccccc;
+                position: fixed;
+                top: 300px;
+                left: 100px;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4">广告</div>
+    </body>
+</html>
+<!--
+position: static    默认值
+position: relative  相对定位→相对于自己的初始位置。不脱离文档流。
+position: absolute  绝对定位→相对于离它最近的已经定位的祖先元素，如果祖先元素都没有定位，就相对body定位。脱离文档流。
+position: fixed     固定定位→相对于浏览器位置。脱离文档流。IE6不支持。
+position：sticky    粘性定位
+-->
