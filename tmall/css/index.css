@@ -1,0 +1,54 @@
+#header{
+    height: 32px;
+    background: #f2f2f2;
+    font-size: 12px;
+    line-height: 32px;
+}
+#login-info{
+    float: left;
+}
+#login-info span, #login-info a, #quick-menu a{
+    color: #999999;
+}
+#login-info a{
+    padding-left: 12px;
+}
+#login-info a:hover{
+    color: #ff0036;
+}
+#quick-menu{
+    float: right;
+}
+#quick-menu .menu{
+    float: left;
+    padding: 0 12px;
+}
+#quick-menu a:hover{
+    color: #ff0036;
+}
+#quick-menu .triangle:hover{
+    background: #ffffff;
+}
+#quick-menu .triangle{
+    position: relative;
+}
+#quick-menu .arrow{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #bbb transparent transparent transparent;
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    margin-top: -1.5px;
+}
+#quick-menu .submenu{
+    position: absolute;
+    width: 100px;
+    display: none;
+}
+#quick-menu .menu:hover .submenu{
+    display: block;
+}
+
