@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>水平导航菜单</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        #list{
+            width: 420px;
+            /*给父元素设置宽度，否则会造成子元素的塌陷问题。不设置宽度的话，浏览器宽度调整时会变化。*/
+            height: 30px;
+            /*给父元素设置高度，否则会造成子元素的塌陷问题。不设置高度的话，下面的p标签会上浮。*/
+        }
+        #list .item{
+            width: 100px;
+            height: 30px;
+            background: #ff0000;
+            float: left;
+            text-align: center;
+            line-height: 30px;
+            margin-right: 5px;
+        }
+            /*text-align:center是给li加的，不是给a加的。是给li中的文本、行级元素加的。a是行级元素，内容撑开，
+            已经占满a，因此不能再设置水平居中。可以将a→block为块级元素，设置宽高后就可以设置水平居中了。
+            →→还是给li设置水平垂直居中更好，因为li下的子菜单submenu也需要水平垂直居中。如果给a标签设置居中，
+            那么子菜单还需要另外设置居中。（li→list.item）
+            */
+        #list .item  a {
+            color: #fff;
+            text-decoration: none;
+            width: 100px;
+            height: 30px;
+            display: block;
+            /*将行级元素a转换为块级元素，使其可以设置宽高，从而使a充满整个item，这样可以使鼠标悬停在item的红色区域时也能
+            变成手指图标*/
+         }
+         #list .item:hover{
+             background: orange;
+         }
+            /*此处写#list a:hover也可以，因为此时a已经充满list*/
+         #list .submenu{
+            display: none;
+         }
+         #list .submenu li{
+            background: #cccccc;
+            cursor: pointer;
+         }
+            /*#list .submenu前面加#list是为了以后不影响其他人的代码，因此给自己的代码加以限制*/
+         #list .submenu li:hover{
+            background: #999;
+         }
+         #list .item:hover .submenu{
+            display: block;
+         }
+    </style>
+</head>
+<body>
+    <ul id="list">
+        <li class="item"><a href="">Link A</a></li>
+        <li class="item"><a href="">Link B</a>
+            <ul class="submenu">
+                <li>001</li>
+                <li>002</li>
+                <li>003</li>
+                <li>004</li>
+            </ul>
+        </li>
+        <li class="item"><a href="">Link C</a></li>
+        <li class="item"><a href="">Link D</a></li>
+    </ul>
+    <p>12345</p>
+</body>
+</html>

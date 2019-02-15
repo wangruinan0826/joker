@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            body{
+                margin: 0;
+            }
+            #div1{
+                width: 200px;
+                height: 200px;
+                background: #ff0000;
+                border: 10px solid #000;
+                padding: 30px;
+                /*margin: 50px;*/
+                margin-bottom: 50px;
+            }
+            #div2{
+                width: 200px;
+                height: 200px;
+                background: #cccccc;
+            }
+            #div3{
+                padding: 20px 30px 40px 50px;
+            }
+            .box{
+                width: 80px;
+                height: 30px;
+                display: inline-block;
+                text-align: center;
+                line-height: 30px;
+                margin-top: 50px;
+            }
+            .box1{
+                background: #ff0000;
+            }
+            .box2{
+                background: #ffff00;
+            }
+            .box3{
+                background: #00ff00;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div1">div1</div>
+        <div id="div2">
+            <div id="div3">只是为了给我一个快乐的结局。So much for my happy ending.</div>
+        </div>
+        <div class="box box1">登录</div>
+        <div class="box box2">注册</div>
+        <div class="box box3">开店</div>
+    </body>
+</html>
+<!--
+盒模型:  内容  内边距 padding  边框 border  外边距 margin
+1.W3C标准盒模型，width和height是指内容的宽高，padding是内容和边框的距离，margin是指边框和其他元素的距离。
+2.浏览器中body部分自带8像素的外边距。
+
+块级元素block：自己占一行  div  h1-h6  p  ul  ol  li  宽度如果不设置就充满父元素，高度如果不设置就是内容撑开的。
+行级元素inline：行级元素和行级元素在一行  span  a      不能设置宽高，就是内容撑开的。
+                                                     行级元素的margin只能设置左右，不能设置上下。
+行级→块级：display: block;
+块级→行级：display: inline;
+行内块级元素：display:inline-block;既可以像块级元素那样设置宽高，又可以像行级元素那样在一块里。
+行级元素间的距离是回车产生的。
+-->
