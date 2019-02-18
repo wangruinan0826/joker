@@ -4,6 +4,7 @@
     font-size: 12px;
     line-height: 32px;
     font-family: "Microsoft YaHei",tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;;
+    border-bottom: 1px solid #eee;
 }
 #login-info{
     float: left;
@@ -23,17 +24,25 @@
 #quick-menu .menu{
     float: left;
     padding: 0 12px;
+    cursor: pointer;
 }
 #quick-menu a:hover{
     color: #ff0036;
+    text-decoration: underline;
 }
 #quick-menu .triangle:hover{
     background: #ffffff;
+    border-color: #eee;
 }
 #quick-menu .triangle{
     position: relative;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 0 1px;
+    height: 33px;
 }
-#quick-menu .arrow{
+#quick-menu .triangle::after{
+    content: '';
     width: 0;
     height: 0;
     border-style: solid;
@@ -44,10 +53,23 @@
     top: 50%;
     margin-top: -1.5px;
 }
+#quick-menu .triangle:hover::after{
+    transform: rotate(180deg);
+    transform-origin: 3px 1.5px;
+    transition: transform .4s ease;
+}
 #quick-menu .submenu{
     position: absolute;
-    width: 100px;
+    top: 33px;
+    left: -1px;
+    padding: 0 10px;
+    width: 74px;
+    border-style: solid;
+    border-color: #eee;
+    border-width: 0 1px 1px 1px;
+    background-color: #fff;
     display: none;
+
 }
 #quick-menu .menu:hover .submenu{
     display: block;
