@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            .box{
+                width: 200px;
+                height: 200px;
+                /*float: left;*/
+                display: inline-block;
+            }
+            .box1{
+                background: #ff0000;
+            }
+            .box2{
+                background: #ffff00;
+            }
+            .box3{
+                background: #00ff00;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="box box1">box1</div>
+    <div class="box box2">box2</div>
+    <div class="box box3">box3</div>
+    </body>
+</html>
+<!--
+二者宽度不够时都会下沉。
+float和inline-block的区别：
+1.浮动脱离文档流，父元素没有高度；
+  inline-block不脱离文档流，父元素仍有高度。
+2.浮动元素紧挨着，inline-bock元素中间有空白（元素间回车产生）。
+-->
