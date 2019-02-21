@@ -205,6 +205,7 @@
 }
 #logo-search .logo{
     float: left;
+    margin-left: -45px;
 }
 #logo-search .search{
     float: left;
@@ -274,7 +275,9 @@
     padding: 0 8px;
 }
 #main-nav .wrapper{
-    margin-left: 200px;
+    width: 867px;
+    margin-left: 363px;
+    overflow: hidden;
 }
 #main-nav img{
     width: 100px;
@@ -285,3 +288,123 @@
     color: #000000;
 }
 /*main-nav  结束*/
+
+
+/*banner  开始*/
+#banner{
+    background: #fd5957;
+}
+#banner .wrapper{
+    height: 500px;
+    background: url("../imgs/banner01.webp") no-repeat;
+    position: relative;
+}
+#banner .banner-nav{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+#banner .banner-nav li{
+    width: 25px;
+    height: 5px;
+    background: #000000;
+    opacity: .3;
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#banner .banner-nav .selected{
+    background: #ffffff;
+}
+#banner .product{
+    width: 200px;
+    height: 536px;
+    background-color: rgba(0,0,0,.55);
+    position: absolute;
+    top: -36px;
+}
+#banner .product .category{
+    height: 36px;
+    background: #ff0036;
+    line-height: 36px;
+    padding-left: 32px;
+}
+#banner .product .category{
+    color: #ffffff;
+}
+#banner .product .type{
+    padding: 3px 0;
+    height: 25px;
+    padding-left: 32px;
+}
+#banner .product .type a{
+    color: #ffffff;
+}
+#banner .product .type:hover{
+    background: #ffffff;
+}
+#banner .product .type:hover a{
+    color: #ff0036;
+}
+/*banner  结束*/
+
+
+/*brand-list  开始*/
+#brand-list .nike{
+    width: 122px;
+    height: 108px;
+    border: 1px solid #cccccc;
+    position: relative;
+}
+#brand-list .brand-img{
+    width: 122px;
+    height: 108px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+#brand-list .brand-mask{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+    text-align: center;
+    overflow: hidden;
+}
+#brand-list .brand-name{
+    color: #ffffff;
+    margin-top: 30px;
+}
+#brand-list .brand-enter{
+    background-color: #ff0036;
+    color: #ffffff;
+    border: none;
+    width: 63px;
+    height: 18px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+    outline: none;
+}
+#brand-list .nike:hover .brand-mask{
+    opacity: 1;
+}
+#brand-list .brand-mask{
+    opacity: 0;
+    -webkit-transition: opacity .3s ease;
+    -moz-transition: opacity .3s ease;
+    -ms-transition: opacity .3s ease;
+    -o-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+}
+/*brand-list  结束*/
