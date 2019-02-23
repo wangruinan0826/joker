@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2a753e3a-761f-4a69-8fc8-bbb10131af86" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="0222.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css3/0222.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="950">
+              <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="0222heiz.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css3/0222heiz.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>logo</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/0213_06水平导航菜单.html" />
+        <option value="$PROJECT_DIR$/0214_02水平导航菜单练习.html" />
+        <option value="$PROJECT_DIR$/0214_03选择器权重值.html" />
+        <option value="$PROJECT_DIR$/tmall.css" />
+        <option value="$PROJECT_DIR$/天猫商城.html" />
+        <option value="$PROJECT_DIR$/t_mall.css" />
+        <option value="$PROJECT_DIR$/0215_04元素居中.html" />
+        <option value="$PROJECT_DIR$/0215_05元素不显示.html" />
+        <option value="$PROJECT_DIR$/0215_06元素充满.html" />
+        <option value="$PROJECT_DIR$/0215_02定位2.html" />
+        <option value="$PROJECT_DIR$/0215_05百分比.html" />
+        <option value="$PROJECT_DIR$/天猫商城lianxi.html" />
+        <option value="$PROJECT_DIR$/lianxi.css" />
+        <option value="$PROJECT_DIR$/0215_02元素居中.html" />
+        <option value="$PROJECT_DIR$/0215_04元素充满.html" />
+        <option value="$PROJECT_DIR$/0215_01定位.html" />
+        <option value="$PROJECT_DIR$/0215_03元素不显示.html" />
+        <option value="$PROJECT_DIR$/0215_01定位3.html" />
+        <option value="$PROJECT_DIR$/0215_05行级元素设置宽高.html" />
+        <option value="$PROJECT_DIR$/0215_01定位1.html" />
+        <option value="$PROJECT_DIR$/0215_01定位2.html" />
+        <option value="$PROJECT_DIR$/html_css/0213_02选择器.html" />
+        <option value="$PROJECT_DIR$/html_css/0213_01常用标签.html" />
+        <option value="$PROJECT_DIR$/html_css/0213_05浮动.html" />
+        <option value="$PROJECT_DIR$/html_css/0214_01外边距.html" />
+        <option value="$PROJECT_DIR$/html_css/0215_05行级元素设置宽高.html" />
+        <option value="$PROJECT_DIR$/html_css/0218_01.html" />
+        <option value="$PROJECT_DIR$/html_css/0218_01伪元素选择器.html" />
+        <option value="$PROJECT_DIR$/html_css/0218_02动画.html" />
+        <option value="$PROJECT_DIR$/html_css/form.html" />
+        <option value="$PROJECT_DIR$/html_css/0219_03form.html" />
+        <option value="$PROJECT_DIR$/html_css/0219_01阴影.html" />
+        <option value="$PROJECT_DIR$/html_css/0219_02BFC清除浮动.html" />
+        <option value="$PROJECT_DIR$/html_css/0219_02BFC清除浮动2.html" />
+        <option value="$PROJECT_DIR$/html_css/0219_05z-index.html" />
+        <option value="$PROJECT_DIR$/tmall/css/common.css" />
+        <option value="$PROJECT_DIR$/html_css/0219_04float_inline-block.html" />
+        <option value="$PROJECT_DIR$/html_css/0219_03float_position.html" />
+        <option value="$PROJECT_DIR$/html_css/0219_02BFC清除浮动1.html" />
+        <option value="$PROJECT_DIR$/tmall/index.html" />
+        <option value="$PROJECT_DIR$/tmall/css/index.css" />
+        <option value="$PROJECT_DIR$/html_css/测试.html" />
+        <option value="$PROJECT_DIR$/测试2.html" />
+        <option value="$PROJECT_DIR$/text/测试2.html" />
+        <option value="$PROJECT_DIR$/text/text.html" />
+        <option value="$PROJECT_DIR$/text/text.css" />
+        <option value="$PROJECT_DIR$/html_css/text3.html" />
+        <option value="$PROJECT_DIR$/text/text3田字格.html" />
+        <option value="$PROJECT_DIR$/css3/0221_01五环.html" />
+        <option value="$PROJECT_DIR$/css3/0222.html" />
+        <option value="$PROJECT_DIR$/css3/0222heiz.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-10" />
+    <option name="width" value="1750" />
+    <option name="height" value="970" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Joker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Joker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Joker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Joker" type="462c0819:PsiDirectoryNode" />
+              <item name="css3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Joker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Joker" type="462c0819:PsiDirectoryNode" />
+              <item name="html_css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Joker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Joker" type="462c0819:PsiDirectoryNode" />
+              <item name="text" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Joker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Joker" type="462c0819:PsiDirectoryNode" />
+              <item name="tmall" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Joker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Joker" type="462c0819:PsiDirectoryNode" />
+              <item name="tmall" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Joker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Joker" type="462c0819:PsiDirectoryNode" />
+              <item name="tmall" type="462c0819:PsiDirectoryNode" />
+              <item name="imgs" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.prettier" value="true" />
+    <property name="node.js.path.for.package.prettier" value="project" />
+    <property name="node.js.selected.package.prettier" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Joker\text" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2a753e3a-761f-4a69-8fc8-bbb10131af86" name="Default" comment="" />
+      <created>1549954489126</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1549954489126</updated>
+      <workItem from="1549954490410" duration="135000" />
+      <workItem from="1549954638990" duration="60000" />
+      <workItem from="1549954838523" duration="39000" />
+      <workItem from="1549954909562" duration="96000" />
+      <workItem from="1549955079573" duration="330000" />
+      <workItem from="1549955447190" duration="96000" />
+      <workItem from="1549955579219" duration="795000" />
+      <workItem from="1549956388839" duration="2496000" />
+      <workItem from="1549960433212" duration="6000" />
+      <workItem from="1549960480984" duration="698000" />
+      <workItem from="1549962040935" duration="456000" />
+      <workItem from="1549971594670" duration="10000" />
+      <workItem from="1549971642030" duration="63000" />
+      <workItem from="1549975205395" duration="16000" />
+      <workItem from="1550017959571" duration="6110000" />
+      <workItem from="1550025301560" duration="4136000" />
+      <workItem from="1550029532580" duration="1979000" />
+      <workItem from="1550031566996" duration="5245000" />
+      <workItem from="1550040288666" duration="145000" />
+      <workItem from="1550040455062" duration="196000" />
+      <workItem from="1550040730343" duration="130000" />
+      <workItem from="1550040918850" duration="194000" />
+      <workItem from="1550041236357" duration="4032000" />
+      <workItem from="1550045740762" duration="436000" />
+      <workItem from="1550046345560" duration="2655000" />
+      <workItem from="1550049056527" duration="118000" />
+      <workItem from="1550049199737" duration="38000" />
+      <workItem from="1550057557803" duration="368000" />
+      <workItem from="1550057964267" duration="1567000" />
+      <workItem from="1550059581017" duration="1143000" />
+      <workItem from="1550060742305" duration="641000" />
+      <workItem from="1550061457849" duration="210000" />
+      <workItem from="1550061681402" duration="492000" />
+      <workItem from="1550062213339" duration="138000" />
+      <workItem from="1550062369634" duration="119000" />
+      <workItem from="1550063545819" duration="139000" />
+      <workItem from="1550103127785" duration="2337000" />
+      <workItem from="1550105781405" duration="4912000" />
+      <workItem from="1550112429503" duration="6706000" />
+      <workItem from="1550125352371" duration="4353000" />
+      <workItem from="1550147636786" duration="2949000" />
+      <workItem from="1550151548808" duration="396000" />
+      <workItem from="1550151959118" duration="220000" />
+      <workItem from="1550191271771" duration="5966000" />
+      <workItem from="1550198194896" duration="5920000" />
+      <workItem from="1550204669036" duration="8647000" />
+      <workItem from="1550215599647" duration="430000" />
+      <workItem from="1550216097333" duration="2632000" />
+      <workItem from="1550218746611" duration="2256000" />
+      <workItem from="1550233866926" duration="707000" />
+      <workItem from="1550234605333" duration="45000" />
+      <workItem from="1550235524008" duration="487000" />
+      <workItem from="1550237663670" duration="3518000" />
+      <workItem from="1550241909651" duration="209000" />
+      <workItem from="1550287545017" duration="268000" />
+      <workItem from="1550290852966" duration="5207000" />
+      <workItem from="1550449442064" duration="5172000" />
+      <workItem from="1550457973645" duration="1400000" />
+      <workItem from="1550459412813" duration="1501000" />
+      <workItem from="1550461103207" duration="3433000" />
+      <workItem from="1550472557740" duration="991000" />
+      <workItem from="1550473645120" duration="778000" />
+      <workItem from="1550474442392" duration="3978000" />
+      <workItem from="1550494203262" duration="1100000" />
+      <workItem from="1550536646696" duration="2906000" />
+      <workItem from="1550543771461" duration="798000" />
+      <workItem from="1550544598391" duration="2579000" />
+      <workItem from="1550547264911" duration="2131000" />
+      <workItem from="1550555675518" duration="2140000" />
+      <workItem from="1550623076471" duration="21000" />
+      <workItem from="1550623168686" duration="412000" />
+      <workItem from="1550623691598" duration="3407000" />
+      <workItem from="1550629673730" duration="2304000" />
+      <workItem from="1550632026066" duration="550000" />
+      <workItem from="1550632620265" duration="428000" />
+      <workItem from="1550633069665" duration="156000" />
+      <workItem from="1550633266319" duration="1382000" />
+      <workItem from="1550634684275" duration="8745000" />
+      <workItem from="1550647370729" duration="22000" />
+      <workItem from="1550647426762" duration="2227000" />
+      <workItem from="1550649794711" duration="119000" />
+      <workItem from="1550650035574" duration="1246000" />
+      <workItem from="1550651308648" duration="1135000" />
+      <workItem from="1550652498821" duration="211000" />
+      <workItem from="1550652727840" duration="529000" />
+      <workItem from="1550708774846" duration="2561000" />
+      <workItem from="1550713035282" duration="6117000" />
+      <workItem from="1550721871170" duration="414000" />
+      <workItem from="1550722315184" duration="3638000" />
+      <workItem from="1550738274206" duration="417000" />
+      <workItem from="1550738761614" duration="859000" />
+      <workItem from="1550802488597" duration="797000" />
+      <workItem from="1550807048134" duration="7000" />
+      <workItem from="1550810698997" duration="835000" />
+      <workItem from="1550817140382" duration="1490000" />
+      <workItem from="1550820331764" duration="1466000" />
+      <workItem from="1550823059067" duration="291000" />
+      <workItem from="1550823375271" duration="101000" />
+      <workItem from="1550883914568" duration="663000" />
+      <workItem from="1550885031755" duration="595000" />
+    </task>
+    <task id="LOCAL-00002" summary="2月12日git的使用方法">
+      <created>1549962081089</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1549962081089</updated>
+    </task>
+    <task id="LOCAL-00003" summary="2月13日html中的一些标签">
+      <created>1550025103971</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1550025103971</updated>
+    </task>
+    <task id="LOCAL-00004" summary="2月13日Css基础内容">
+      <created>1550030238662</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1550030238662</updated>
+    </task>
+    <task id="LOCAL-00005" summary="2月12日Git的使用方法">
+      <created>1550030444966</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1550030444966</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Html中常用的标签">
+      <created>1550058343694</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1550058343694</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Css常用的选择器">
+      <created>1550058413366</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1550058413366</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Css外部样式">
+      <created>1550058744393</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1550058744393</updated>
+    </task>
+    <task id="LOCAL-00009" summary="图片">
+      <created>1550058964644</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1550058964644</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Css样式、选择器">
+      <created>1550059428592</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1550059428592</updated>
+    </task>
+    <task id="LOCAL-00011" summary="盒模型">
+      <created>1550059484791</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1550059484791</updated>
+    </task>
+    <task id="LOCAL-00012" summary="三角形的构建">
+      <created>1550060038558</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1550060038558</updated>
+    </task>
+    <task id="LOCAL-00013" summary="元素浮动、元素塌陷">
+      <created>1550060560578</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1550060560578</updated>
+    </task>
+    <task id="LOCAL-00014" summary="水平导航菜单">
+      <created>1550060658878</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1550060658878</updated>
+    </task>
+    <task id="LOCAL-00015" summary="水平导航菜单">
+      <created>1550062416843</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1550062416843</updated>
+    </task>
+    <task id="LOCAL-00016" summary="水平导航菜单">
+      <created>1550105162993</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1550105162993</updated>
+    </task>
+    <task id="LOCAL-00017" summary="盒模型">
+      <created>1550105221496</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1550105221496</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Html中的常用标签">
+      <created>1550105284398</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1550105284398</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Html中的常用标签">
+      <created>1550105641370</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1550105641370</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Css样式、选择器">
+      <created>1550105701752</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1550105701752</updated>
+    </task>
+    <task id="LOCAL-00021" summary="元素浮动、元素塌陷">
+      <created>1550105745611</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1550105745611</updated>
+    </task>
+    <task id="LOCAL-00022" summary="水平导航菜单">
+      <created>1550112294780</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1550112294780</updated>
+    </task>
+    <task id="LOCAL-00023" summary="外边距问题">
+      <created>1550113621585</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1550113621585</updated>
+    </task>
+    <task id="LOCAL-00024" summary="水平导航菜单">
+      <created>1550115165317</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1550115165317</updated>
+    </task>
+    <task id="LOCAL-00025" summary="水平导航菜单">
+      <created>1550115293627</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1550115293627</updated>
+    </task>
+    <task id="LOCAL-00026" summary="水平导航菜单">
+      <created>1550115392660</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1550115392660</updated>
+    </task>
+    <task id="LOCAL-00027" summary="水平导航菜单的练习">
+      <created>1550115702535</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1550115702535</updated>
+    </task>
+    <task id="LOCAL-00028" summary="选择器的权重值问题">
+      <created>1550125652709</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1550125652709</updated>
+    </task>
+    <task id="LOCAL-00029" summary="元素居中利用定位的步骤">
+      <created>1550205168559</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1550205168559</updated>
+    </task>
+    <task id="LOCAL-00030" summary="元素不显示的方法">
+      <created>1550205806623</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1550205806623</updated>
+    </task>
+    <task id="LOCAL-00031" summary="元素充满的方法">
+      <created>1550206252368</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1550206252368</updated>
+    </task>
+    <task id="LOCAL-00032" summary="元素不显示的方法">
+      <created>1550206868203</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1550206868203</updated>
+    </task>
+    <task id="LOCAL-00033" summary="行级元素脱离文档流后可设置宽高">
+      <created>1550207115465</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1550207115465</updated>
+    </task>
+    <task id="LOCAL-00034" summary="相对定位、绝对定位、固定定位">
+      <created>1550207347964</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1550207347964</updated>
+    </task>
+    <task id="LOCAL-00035" summary="粘性定位">
+      <created>1550207531001</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1550207531001</updated>
+    </task>
+    <task id="LOCAL-00036" summary="图片">
+      <created>1550214117393</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1550214117393</updated>
+    </task>
+    <task id="LOCAL-00037" summary="html、css基础">
+      <created>1550214284414</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1550214284414</updated>
+    </task>
+    <task id="LOCAL-00038" summary="html中的常用标签">
+      <created>1550214565130</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1550214565130</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Html、Css基础">
+      <created>1550214711294</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1550214711294</updated>
+    </task>
+    <task id="LOCAL-00040" summary="天猫商城">
+      <created>1550234163020</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1550234163020</updated>
+    </task>
+    <task id="LOCAL-00041" summary="天猫商城">
+      <created>1550291237842</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1550291237842</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Html、Css">
+      <created>1550300162260</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1550300162260</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Html、Css">
+      <created>1550459992726</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1550459992726</updated>
+    </task>
+    <task id="LOCAL-00044" summary="天猫商城">
+      <created>1550460057886</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1550460057886</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Html、Css">
+      <created>1550639946716</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1550639946716</updated>
+    </task>
+    <task id="LOCAL-00046" summary="天猫商城">
+      <created>1550640077548</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1550640077548</updated>
+    </task>
+    <task id="LOCAL-00047" summary="天猫商城">
+      <created>1550722426061</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1550722426061</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Html、Css">
+      <created>1550722464731</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1550722464731</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Text">
+      <created>1550722531257</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1550722531257</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Css3">
+      <created>1550810732257</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1550810732257</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="165744000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1829427" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32872927" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32872927" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="SHOW_UNVERSIONED_FILES_WHILE_COMMIT" value="false" />
+    <MESSAGE value="Css常用的选择器" />
+    <MESSAGE value="Css外部样式" />
+    <MESSAGE value="三角形的构建" />
+    <MESSAGE value="盒模型" />
+    <MESSAGE value="Html中的常用标签" />
+    <MESSAGE value="Css样式、选择器" />
+    <MESSAGE value="元素浮动、元素塌陷" />
+    <MESSAGE value="外边距问题" />
+    <MESSAGE value="水平导航菜单" />
+    <MESSAGE value="水平导航菜单的练习" />
+    <MESSAGE value="选择器的权重值问题" />
+    <MESSAGE value="元素居中利用定位的步骤" />
+    <MESSAGE value="元素充满的方法" />
+    <MESSAGE value="元素不显示的方法" />
+    <MESSAGE value="行级元素脱离文档流后可设置宽高" />
+    <MESSAGE value="相对定位、绝对定位、固定定位" />
+    <MESSAGE value="粘性定位" />
+    <MESSAGE value="图片" />
+    <MESSAGE value="html、css基础" />
+    <MESSAGE value="html中的常用标签" />
+    <MESSAGE value="Html、Css基础" />
+    <MESSAGE value="天猫商城" />
+    <MESSAGE value="Html、Css" />
+    <MESSAGE value="Text" />
+    <MESSAGE value="Css3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Css3" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/0212" />
+    <entry file="file://$PROJECT_DIR$/0212" />
+    <entry file="file://$PROJECT_DIR$/0212.html" />
+    <entry file="file://$PROJECT_DIR$/0213_1" />
+    <entry file="file://$PROJECT_DIR$/12345.html" />
+    <entry file="file://$PROJECT_DIR$/0213_01常用标签.html" />
+    <entry file="file://$PROJECT_DIR$/0213_02选择器.html" />
+    <entry file="file://$PROJECT_DIR$/style.css" />
+    <entry file="file://$PROJECT_DIR$/0214_02水平导航菜单练习.html" />
+    <entry file="file://$PROJECT_DIR$/0215_05百分比.html" />
+    <entry file="file://$PROJECT_DIR$/0213_03盒模型.html" />
+    <entry file="file://$PROJECT_DIR$/0213_04三角形.html" />
+    <entry file="file://$PROJECT_DIR$/0213_05浮动.html" />
+    <entry file="file://$PROJECT_DIR$/0213_06水平导航菜单.html" />
+    <entry file="file://$PROJECT_DIR$/0214_01外边距.html" />
+    <entry file="file://$PROJECT_DIR$/0214_03选择器权重值.html" />
+    <entry file="file://$PROJECT_DIR$/0215_04元素充满.html" />
+    <entry file="file://$PROJECT_DIR$/0215_03元素不显示.html" />
+    <entry file="file://$PROJECT_DIR$/0215_02元素居中.html" />
+    <entry file="file://$PROJECT_DIR$/0215_05行级元素设置宽高.html" />
+    <entry file="file://$PROJECT_DIR$/0215_01定位2.html" />
+    <entry file="file://$PROJECT_DIR$/0215_01定位1.html" />
+    <entry file="file://$PROJECT_DIR$/lianxi.css" />
+    <entry file="file://$PROJECT_DIR$/html_css/天猫商城lianxi.html" />
+    <entry file="file://$PROJECT_DIR$/html_css/0213_06水平导航菜单.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1197">
+          <caret line="63" column="6" selection-start-line="63" selection-start-column="6" selection-end-line="63" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html_css/0214_01外边距.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html_css/0219_05z-index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html_css/0219_02BFC清除浮动2.html" />
+    <entry file="file://$PROJECT_DIR$/html_css/0219_04float_inline-block.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html_css/0219_06form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/text.html" />
+    <entry file="file://$PROJECT_DIR$/text/text.css" />
+    <entry file="file://$PROJECT_DIR$/html_css/测试.html" />
+    <entry file="file://$PROJECT_DIR$/tmall/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html_css/0221_02省略号.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html_css/0213_05浮动.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html_css/0219_03float_position.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html_css/0219_02BFC清除浮动.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="44" column="22" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html_css/0213_01常用标签.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="49" column="27" lean-forward="true" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html_css/0213_02选择器.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="636">
+          <caret line="68" column="5" lean-forward="true" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html_css/0213_03盒模型.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-684" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/text3田字格.html" />
+    <entry file="file://$PROJECT_DIR$/tmall/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="120" selection-start-line="120" selection-end-line="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmall/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3933">
+          <caret line="207" column="23" selection-start-line="207" selection-start-column="23" selection-end-line="207" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css3/0221_01五环.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html_css/0219_01阴影.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html_css/0218_02动画.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html_css/0218_01伪元素选择器.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html_css/0215_05行级元素设置宽高.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css3/0222.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css3/0222heiz.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
