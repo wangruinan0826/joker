@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+    }
+    #container{
+        width: 910px;
+        height: 350px;
+    }
+    ul{
+        overflow: hidden;
+    }
+    li{
+        list-style: none;
+        float: left;
+        width: 300px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        background: #ffffff;
+        border: 1px solid #cccccc;
+    }
+    li.active{
+        background: #cccccc;
+    }
+    #content div{
+        width: 904px;
+        height: 300px;
+        border: 1px solid #cccccc;
+        background: #ffffff;
+        display: none;
+    }
+    #content .selected{
+        display: block;
+    }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <ul>
+            <li class="active">html</li>
+            <li>css</li>
+            <li>javascript</li>
+        </ul>
+        <div id="content">
+            <div class="selected">aaaaaaaaaa</div>
+            <div>bbbbbbbbbb</div>
+            <div>cccccccccc</div>
+        </div>
+    </div>
+
+    <script>
+        var aLi=document.getElementsByTagName('li');
+        var oContent=document.getElementById('content');
+        var aDiv=oContent.getElementsByTagName('div');
+        for(var i=0;i<aLi.length;i++){ //页面初始刷新，绑定事件；此时已经循环完成，i=3，因此后面不能再用aLi，越界取不到。
+            aLi[i].index=i; //给所有li添加自定义属性：索引index，方便后面div数组找到对应的li的索引。
+            aLi[i].onclick=function(){
+                for(var j=0;j<aLi.length;j++){ //再循环一次将所有li和div的class清除。与第一次循环执行的时间点不同。
+                    aLi[j].className='';
+                    aDiv[j].className='';
+                }
+                this.className='active'; //this对当前对象的引用，不能再用aLi，因为i=3，越界无法遍历到，undefined。
+                aDiv[this.index].className='selected'; //将aDiv数组中索引是this.index的对应显示。
+            }
+        }
+    </script>
+</body>
+</html>
