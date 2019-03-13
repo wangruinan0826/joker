@@ -56,6 +56,7 @@
 
         oSmallBox.onmouseover=function(){
             oDrag.style.display='block';
+            oBigBox.style.display='block';
             oSmallBox.onmousemove=function(e){
                 var x=e.clientX-oDrag.offsetWidth/2;
                 var y=e.clientY-oDrag.offsetHeight/2;
@@ -75,7 +76,6 @@
                 }
                 oDrag.style.left=x+'px';
                 oDrag.style.top=y+'px';
-                oBigBox.style.display='block';
                 //1.drag移动的最大距离 oSmallBox-oDrag
                 var smallxMax=oSmallBox.offsetWidth-oDrag.offsetWidth;
                 //2.bigImg移动的最大距离 oBigImg-oBigBox
@@ -93,14 +93,11 @@
 
                 oBigImg.style.top=-bigyMax*yBili+'px';
             }
-            oSmallBox.onmouseout=function(){
+        }
+        oSmallBox.onmouseout=function(){
                 oDrag.style.display='none';
                 oBigBox.style.display='none';
             }
-        }
-
-
-
     </script>
 </body>
 </html>
