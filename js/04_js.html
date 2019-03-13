@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // 全局 和 局部  作用域
+        // 作用域链
+
+        /* var a = 5; // 全局
+        function foo(){
+            a = 6;
+            console.log('1==' + a);//6
+        }
+        foo();
+        console.log('2==' + a);//6 */
+
+
+        /* var a = 5;
+        var b = a;
+        a = 6;
+        console.log(b); // 5 */
+
+        /* var obj1 = {
+            name: 'zhangsan',
+            age: 18
+        };
+        var obj2 = obj1; // 浅拷贝
+        obj1.name = 'lisi'
+        console.log(obj1.name); */
+
+        // 深拷贝
+        /* var obj2 = new Object() */;
+        /* obj2.name = obj1.name; */
+        /* obj2.age = obj1.age; */
+        /* //  console.log(obj2); */
+        /* obj1.name = 'lisi' */
+        /* console.log(obj2.name); */
+
+        // 110 =  0 + 2 + 4
+
+        /* var mytext = "Here is<br>some text!" */
+        /* document.write(mytext);      */
+
+        /* document.write("<h1 id='aa'>hello</h1>"); */
+
+        /* var a = 5;
+        if(a==2){
+            console.log(123);
+        } */
+
+
+        /* for (var i = 0; i < 5; i++) {
+            if(i == 3){
+                // break;
+                continue;
+            }
+            console.log(i);
+        } */
+
+
+        /* var n = 5;
+        for (var i = 0; i < 5; i++) {
+            // debugger;
+            n += i;
+        } */
+        /* var x = 0;
+        for (x += 1; x < 6; x = 1) {
+            console.log(123);
+        } */
+        /* for (var i = 0,j = 10; i = j = 10; i++ , j-- ){
+            
+        } */
+
+        /*  function fn1(){
+             return function fn2(){
+                 var a = 5;
+                 return a;
+             }
+         }
+         var newFn2 = fn1();
+         console.log(newFn2()); */
+
+
+        /* function a(b){
+            console.log('a');
+            b(function(){
+                console.log('c');
+            });
+        }
+
+        a(function(c){
+            console.log('b');
+            c();
+        }); */
+
+        /* function fn1(){
+            var a = 5;
+        }
+
+        function fn2(){
+            var a = 6;
+        } */
+
+        /* var a = 5;
+        var a = 6;
+        console.log(a); */
+
+
+        /* var fn = function(){
+            console.log(123);
+        }; */
+
+        /* (function(){
+            console.log(123);
+        })(); // 函数立即调用 */
+
+        // console.log(window);
+
+
+        /* (function() {
+            var a = 5;
+            var b = 6;
+            function aaa() {
+
+            }
+        })();
+
+
+        console.log(window); */
+
+        /* var a = 5;
+        (function(xx){
+            console.log(xx);
+        })(a); */
+
+
+        /* function f() {
+            console.log(arguments[0], arguments[1], arguments[2]);
+        }
+
+        f(4, 5, 6); */
+
+        // var now = new Date();
+        // console.log( Date());
+        // console.log( new Date());
+
+        // var str = 'weichuang';//var str = new String('weichuang');
+        /*  var obj = {
+             name: 'zs'
+         };/ / var obj = new Object();*/
+
+
+        var str = 'weichuang';
+        /* for(var i=0; i<str.length; i++){
+            // console.log(str[i]);
+            console.log(str.charAt(i));
+        } */
+        /* console.log(str[9]);
+        console.log(str.charAt(9));
+
+        if(str.indexOf('ch') != -1){
+
+        } */
+
+        /* var str = 'hello,world,good,good';
+        console.log(str.split(',')); */
+
+        /*  var arr = [];
+         for(var i=1; i<=5; i++){
+             arr.push(i);
+         }
+         console.log(arr);
+         var result = arr.pop();
+         // console.log(result);
+         console.log(arr.reverse()); */
+
+        /* var arr = [5, 6, 1, 3, 2, 11, 12];
+        console.log(arr.sort(function(a, b){
+            return Math.random() - 0.5;
+        })); */
+
+        var arr = [5, 6, 7, 8, 9, 10];
+        arr.splice(2, 0, 'a', 'b', 'c');
+        console.log(arr);
+        console.log(arr.join(':'));
+
+
+
+    </script>
+</body>
+
+</html>

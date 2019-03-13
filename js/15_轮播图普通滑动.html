@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-    *{
+        *{
         margin: 0;
         padding: 0;
     }
@@ -14,13 +14,18 @@
         width: 750px;
         height: 291px;
         margin: 100px auto;
+        overflow: hidden;
         position: relative;
     }
-    #img-box img{
-        display: none;
+    #img-box{
+        width: 3750px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: left 1s ease ;
     }
-    #img-box .selected{
-        display: block;
+    #img-box img{
+        float: left;
     }
     #btn-box{
         list-style: none;
@@ -29,6 +34,7 @@
         bottom: 10px;
     }
     #btn-box li{
+        /* list-style: none; */
         float: left;
         width: 20px;
         height: 20px;
@@ -86,38 +92,34 @@
 
     <script>
         var oContainer=document.getElementById('container');
-        var oBtnbox=document.getElementById('btn-box');
-        var aLi=oBtnbox.getElementsByTagName('li');
         var oImgbox=document.getElementById('img-box');
         var aImg=oImgbox.getElementsByTagName('img');
-        var oNext=document.getElementById('next');
+        var oBtnbox=document.getElementById('btn-box');
+        var aLi=oBtnbox.getElementsByTagName('li');
         var oPrev=document.getElementById('prev');
+        var oNext=document.getElementById('next');
         var iNow=0;
         var timer;
-        for(var i=0;i<aLi.length;i++){
+
+        for(i=0;i<aLi.length;i++){
             aLi[i].index=i;
-            aLi[i].onclick=function() {
-                // for(var j=0;j<aLi.length;j++) {
+            aLi[i].onclick=function(){
+                // for(j=0;j<aLi.length;j++){
                 //     aLi[j].className='';
-                //     aImg[j].className='';
                 // }
-                // aLi[this.index].className='active';
-                // aImg[this.index].className='selected';
+                // this.className='active';
+                // oImgbox.style.left=-this.index*750+'px';
+                // oImgbox.style.transform='translateX(-'+this.index*750+'px)';
                 change(this.index);
                 iNow=this.index;
-            }    
+            }
         }
+
         oNext.onclick=function(){
             iNow++;
             if(iNow==aLi.length){
                 iNow=0;
             }
-            // for(var i=0;i<aLi.length;i++){
-            //     aLi[i].className='';
-            //     aImg[i].className='';
-            // }
-            // aLi[iNow].className='active';
-            // aImg[iNow].className='selected';
             change(iNow);
         }
         oPrev.onclick=function(){
@@ -125,37 +127,25 @@
             if(iNow==-1){
                 iNow=aLi.length-1;
             }
-            // for(var j=0;j<aLi.length;j++){
-            //     aLi[j].className='';
-            //     aImg[j].className='';
-            // }
-            // aLi[iNow].className='active';
-            // aImg[iNow].className='selected';
-            change(iNow)
+            change(iNow);
         }
 
         function change(num){
-            for(var i=0;i<aLi.length;i++){
-                aLi[i].className='';
-                aImg[i].className='';
-            }
-            aLi[num].className='active';
-            aImg[num].className='selected';
+            for(j=0;j<aLi.length;j++){
+                    aLi[j].className='';
+                }
+                aLi[num].className='active';
+                oImgbox.style.left=-num*750+'px';
         }
-        
-        // var timer=setInterval(function(){
-        //     oNext.onclick();
-        // },1000)
+
         run();
         oContainer.onmouseover=function(){
             clearInterval(timer);
-        }
+        } 
         oContainer.onmouseout=function(){
-            // timer=setInterval(function(){
-            // oNext.onclick();
-            // },1000)
             run();
         }
+
         function run(){
             timer=setInterval(function(){
                 oNext.onclick();

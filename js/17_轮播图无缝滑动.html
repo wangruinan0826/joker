@@ -18,7 +18,10 @@
         position: relative;
     }
     #img-box{
-        width: 3750px;
+        width: 4500px;
+        position: absolute;
+        left: 0;
+        top: 0;
     }
     #img-box img{
         float: left;
@@ -73,6 +76,7 @@
                 <img src="img/3.jpg" alt="">
                 <img src="img/4.jpg" alt="">
                 <img src="img/5.jpg" alt="">
+                <img src="img/1.jpg" alt="">
         </div>
         <ul id="btn-box">
             <li class="active">1</li>
@@ -84,18 +88,55 @@
         <span id="prev">&lt;</span>
         <span id="next">&gt;</span>
     </div>
-
-
+    <script src="jslib.js"></script>
     <script>
-        var oContainer=document.getElementById('container');
+        var oNext=document.getElementById('next');
+        var oPrev=document.getElementById('prev');
         var oImgbox=document.getElementById('img-box');
         var aImg=oImgbox.getElementsByTagName('img');
-        var oBtnbox=document.getElementById('btn-box');
-        var aLi=oBtnbox.getElementsByTagName('li');
-        var oPrev=document.getElementById('prev');
-        var oNext=document.getElementById('next');
+        var aLi=document.getElementsByTagName('li');
+        var iNow=0;
+        var timer;
+        oNext.onclick=function(){
+            iNow++;
+            if(iNow==aImg.length){
+                oImgbox.style.left=0;
+                iNow=1;
+            }
+            change(iNow);
+        }
 
-        
+        oPrev.onclick=function(){
+            iNow--;
+            if(iNow==-1){
+                oImgbox.style.left=-(aImg.length-1)*750+'px';
+                iNow=aImg.length-2;
+                //4
+            }
+            change(iNow);
+        }    
+        function change(num){
+            animate(oImgbox,{
+                left: -num*750
+            });
+            for(var i=0;i<aLi.length;i++){
+            aLi[i].className='';
+        }
+        aLi[num==5?0:num].className='active';
+        }
+        run();
+        oContainer.onmouseover=function(){
+            clearInterval(timer);
+        } 
+        oContainer.onmouseout=function(){
+            run();
+        }
+
+        function run(){
+            timer=setInterval(function(){
+                oNext.onclick();
+            },1000)
+        }
     </script>
 </body>
 </html>
