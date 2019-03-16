@@ -14,39 +14,37 @@
         width: 750px;
         height: 291px;
         margin: 100px auto;
-        overflow: hidden;
         position: relative;
+        overflow: hidden;
     }
     #img-box{
         width: 4500px;
         position: absolute;
         left: 0;
-        top: 0;
     }
-    #img-box img{
+    img{
         float: left;
     }
     #btn-box{
         list-style: none;
         position: absolute;
-        right: 10px;
         bottom: 10px;
-    }
-    #btn-box li{
-        /* list-style: none; */
-        float: left;
-        width: 20px;
-        height: 20px;
-        background: rgba(0,0,0,0.4);
-        border-radius: 5px;
-        text-align: center;
-        line-height: 20px;
-        color: #ffffff;
-        margin-right: 5px;
-        cursor: pointer;
+        right: 0;
     }
     #btn-box .active{
         background: #ff0036;
+    }
+    #btn-box li{
+        float: left;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        background: rgba(0,0,0,0.4);
+        color: #ffffff;
+        border-radius: 5px;
+        margin-right: 5px;
+        cursor: pointer;
     }
     #prev,#next{
         width: 20px;
@@ -71,12 +69,12 @@
 <body>
     <div id="container">
         <div id="img-box">
-                <img class='selected' src="img/1.jpg" alt="">
-                <img src="img/2.jpg" alt="">
-                <img src="img/3.jpg" alt="">
-                <img src="img/4.jpg" alt="">
-                <img src="img/5.jpg" alt="">
-                <img src="img/1.jpg" alt="">
+            <img src="img/1.jpg" alt="">
+            <img src="img/2.jpg" alt="">
+            <img src="img/3.jpg" alt="">
+            <img src="img/4.jpg" alt="">
+            <img src="img/5.jpg" alt="">
+            <img src="img/1.jpg" alt="">
         </div>
         <ul id="btn-box">
             <li class="active">1</li>
@@ -88,16 +86,33 @@
         <span id="prev">&lt;</span>
         <span id="next">&gt;</span>
     </div>
+
+
     <script src="jslib.js"></script>
     <script>
-        var oContainer=document.getElementById('container');
-        var oNext=document.getElementById('next');
-        var oPrev=document.getElementById('prev');
+        var oBtnbox=document.getElementById('btn-box');
+        var aLi=oBtnbox.getElementsByTagName('li');
         var oImgbox=document.getElementById('img-box');
         var aImg=oImgbox.getElementsByTagName('img');
-        var aLi=document.getElementsByTagName('li');
+        var oNext=document.getElementById('next');
+        var oPrev=document.getElementById('prev');
         var iNow=0;
+        var oContainer=document.getElementById('container');
         var timer;
+
+        for(var i=0;i<aLi.length;i++){
+            aLi[i].index=i;
+            aLi[i].onclick=function(){
+                // for(var j=0;j<aLi.length;j++){
+                //     aLi[j].className='';
+                // }
+                // this.className='active';
+                // oImgbox.style.left=-this.index*750+'px';
+                change(this.index);
+                iNow=this.index;
+            }
+        }
+
         oNext.onclick=function(){
             iNow++;
             if(iNow==aImg.length){
@@ -106,34 +121,32 @@
             }
             change(iNow);
         }
-
         oPrev.onclick=function(){
             iNow--;
             if(iNow==-1){
-                oImgbox.style.left=-(aImg.length-1)*750+'px';
+                oImgbox.style.left=-(aImg.length-1)*oContainer.offsetWidth+'px';
                 iNow=aImg.length-2;
-                //4
             }
             change(iNow);
-        }    
-        function change(num){
-            animate(oImgbox,{
-                left: -num*750
-            });
-            for(var i=0;i<aLi.length;i++){
-            aLi[i].className='';
         }
-        aLi[num==5?0:num].className='active';
+        function change(num){
+            for(var j=0;j<aLi.length;j++){
+                    aLi[j].className='';
+                }
+            aLi[num==5?0:num].className='active';
+            animate(oImgbox,{
+               left:-num*750
+           }) 
+
         }
 
         run();
         oContainer.onmouseover=function(){
             clearInterval(timer);
-        } 
+        }
         oContainer.onmouseout=function(){
             run();
         }
-
         function run(){
             timer=setInterval(function(){
                 oNext.onclick();

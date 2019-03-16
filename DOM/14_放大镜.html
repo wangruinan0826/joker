@@ -81,7 +81,7 @@
                 //2.bigImg移动的最大距离 oBigImg-oBigBox
                 var bigxMax=oBigImg.offsetWidth-oBigBox.offsetWidth;
                 //3.drag移动的比例=drag移动的距离/drag移动的最大距离 oDrag.offsetLeft/smallxMax
-                var xBili=oDrag.offsetLeft/smallxMax;
+                var xBili=x/smallxMax;
                 //4.bigImg移动的距离=-bigImg移动的最大距离*drag移动的比例 -bigxmax*xbili
                 oBigImg.style.left=-bigxMax*xBili+'px';
 
