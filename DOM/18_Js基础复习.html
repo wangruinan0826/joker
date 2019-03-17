@@ -34,13 +34,13 @@
         console.log(typeof [1,2,3]);    //"object"
         console.log(typeof {name:'zs'});  //"object"
         
-
-        console.log(Array.isArray([1,2,3]));
-
+        //区分数组还是对象
         var arr = [1,2,3]; //new Array()
         var obj1 = {
             name:'zs'
         }
+        console.log(Array.isArray(arr));
+
         console.log(arr.constructor == Array );
 
         console.log( obj1 instanceof Array);
