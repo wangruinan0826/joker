@@ -29,7 +29,7 @@
         //封装函数(找firstchild)
     function first(elem){
         elem=elem.firstChild;
-        if(elem.nodeType!=1){
+        if(elem&&elem.nodeType!=1){
             elem=next(elem);
         }
         return elem;
