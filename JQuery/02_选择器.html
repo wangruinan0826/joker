@@ -16,8 +16,8 @@
 
 <body>
     <ul>
-        <li class="aa">1111</li>
-        <li class="bb">22</li>
+        <li class="aa">111</li>
+        <li class="bb">222</li>
         <li class="cc">333</li>
         <li class="dd">444</li>
         <li class="aa">555</li>
@@ -38,19 +38,21 @@
 
     <script src="jquery-1.12.4.js"></script>
     <script>
-        // $("#li2+li").css("background","red");
+        // $('.bb~li').css('background','blue');
 
-        // $("li[class=aa]").css("background","pink");
-        //  1    2   4    
-        // $("li:nth-child(2n)").css("background","pink");
-        // $("ul li:first-child").css("background","pink");
+        // $('li[class=bb]').css('background','red');
 
-        // $("ul li:eq(0)").css("background","purple");
-        // li中索引是偶数 
-        // $("ul li:first").css("background","purple");
-        // $("ul li:first").css("background","purple");
-        $("ul li:not(.cc)").css("background","purple");
-        $(":input")
+        // 从1开始计数  2   4    
+        $('ul li:nth-child(2n)').css('background','pink');
+
+        // $('ul li:first-child').css('background','yellow');
+
+        // 从索引开始计数
+        // $('ul li:eq(0)').css('background','grey'); 
+        // $('ul li:even').css('background','green');
+        // $('ul li:odd').css('background','red');
+
+        // $("ul li:not(.cc)").css("background","orange");
     </script>
 
 
