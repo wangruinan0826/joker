@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .pink{
+            background: pink;
+            outline: none;
+        }
+        #div1{
+            width: 200px;
+            height: 200px;
+            background: #ff0000;
+        }
+        .aa{
+            border: 1px solid #000000;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">123</div>
+    <input type="text" value="请输入用户名"/>
+
+
+    <script src="jquery-1.12.4.js"> </script>
+    <script>
+        $('#div1').on('click',function(){
+        //     // $('#div1').toggleClass('aa');
+        //     // $(this).css('background',"pink");
+            $(this).css({
+                background: 'green',
+                opacity: 0.5,
+                width: 800
+            })
+        })
+        // var oDiv1=document.getElementById('div1')
+
+        // oDiv1.onclick=function(){
+        //     if(oDiv1.className==''){
+        //         oDiv1.className='aa';
+        //     }else if(oDiv1.className=='aa'){
+        //         oDiv1.className='';
+        //     }
+        // }
+
+        $('input').on('focus',function(){
+            $(this).addClass('pink');
+            if(this.value==this.defaultValue){
+                this.value='';
+            }
+        }).on('blur',function(){
+            $(this).removeClass('pink');
+            if(this.value==''){
+                this.value=this.defaultValue;
+            }
+        })
+    </script>
+</body>
+</html>

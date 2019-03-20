@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        ul{
+            background: #ff0000;
+        }
+        li{
+            background: #00ff00;
+        }
+    </style>
 </head>
 <body>
     <button id="btn">click</button>
@@ -20,6 +28,12 @@
         var aLi=document.getElementsByTagName('li');
         var oBtn=document.getElementById('btn');
         
+        oBtn.onclick=function(){
+            var oLi=document.createElement('li');
+            oLi.innerHTML=Math.random();
+            oUl.append(oLi);
+        }
+
         // for(var i=0;i<aLi.length;i++){
         //     aLi[i].onclick=function(e){
         //         console.log(this.innerHTML);
@@ -31,11 +45,6 @@
             if(target.tagName=='LI'){
                 console.log(target.innerHTML);
             }
-        }
-        oBtn.onclick=function(){
-            var oLi=document.createElement('li');
-            oLi.innerHTML=Math.random();
-            oUl.appendChild(oLi);
         }
     </script>
 </body>
