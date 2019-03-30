@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #container{
+            width: 200px;
+        }
+        h2{
+            background: #000000;
+            color: #ffffff;
+        }
+        ul{
+            border: 1px solid #000000;
+            display: none;
+        }
+        .active{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id='container'>
+        <h2>管理区</h2>
+        <ul>
+            <li>001</li>
+            <li>002</li>
+            <li>003</li>
+        </ul>
+        <h2>交流区</h2>
+        <ul>
+            <li>001</li>
+            <li>002</li>
+            <li>003</li>
+        </ul>
+    </div>
+
+    <script src="jquery-1.12.4.js"> </script>
+    <script>
+        $('#container h2').on('click',function(){
+            $('#container ul').eq($(this).index('h2')).toggleClass('active');
+        })
+    </script>
+</body>
+</html>

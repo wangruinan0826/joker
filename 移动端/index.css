@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 0.32rem;
+}
+#nav{
+    background: #00c2ae;
+    height: 1.01rem;
+    display: flex;
+}
+.address{
+    width: 1.67rem;
+    line-height: 1.01rem;
+    text-align: center;
+    color: #ffffff;
+}
+.search{
+    flex: 1;
+    line-height: 1.01rem;
+}
+.mine{
+    width: 0.94rem;
+    line-height: 1.01rem;
+    text-align: center;
+    color: #ffffff;
+}
+.product li{
+    display: flex;
+}
+.product .img{
+    width:1.8rem;
+    height:1.8rem;
+    margin-right:0.2rem;
+
+}
+.product .content{
+    flex:1;
+}

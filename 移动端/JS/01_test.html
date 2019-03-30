@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #div1{
+            width: 200px;
+            height: 200px;
+            background: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+    </div>
+    <script src="zepto.js"></script>
+    <script src="touch.js"></script>
+    <script>
+        // $('#div1').on('click',function(){
+        //     console.log('div1 click');
+        // })
+
+        // $('#div1').on('tap',function(){
+        //     console.log('div1 tap');
+        // })
+
+        // $('#div1').on('swipe',function(){
+        //     console.log('div1 swap');
+        // })
+
+        // $('#div1').on('swipeLeft',function(){
+        //     console.log('div1 swapLeft');
+        // })
+
+        // $('#div1').on('swipeRight',function(){
+        //     console.log('div1 swapRight');
+        // })
+
+        $('#div1').on('singleTap',function(){
+            console.log('div1 singleTap');
+        })
+
+        $('#div1').on('doubleTap',function(){
+            console.log('div1 doubleTap');
+        })
+
+        $('#div1').on('longTap',function(){
+            console.log('div1 longTap');
+        })
+
+        
+    </script>
+    
+</body>
+</html>
