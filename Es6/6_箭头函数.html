@@ -43,7 +43,7 @@
          箭头函数中的this指向的是 声明时的this 
          父作用域中的this
         */
-        
+
         // oDiv.onclick = function(){
         //     // this
         //     setTimeout(() => {
@@ -51,7 +51,6 @@
         //     },1000);
         // }
 
-        
         // var obj = {
         //     name:'zs',
         //     age:20,
@@ -59,7 +58,6 @@
         //         console.log(this);
         //     }
         // }
-        
         // var xx = 1;
         // var obj = {
         //     name:'zs',
@@ -78,11 +76,77 @@
         
 
         // obj.say();
+
+        // function Person(name){
+        //     this.name = name;
+        // }
+        // var p1 = new Person('zs');
+
+        // let Person = (name) => {
+        //     this.name = name;
+        // }
+
+        // let p1 = new Person();
+
+
+        // let a = (...rest) => {
+        //     // console.log(arguments);
+        //     console.log(rest);
+        // }
+
+        // a(1,2,3);
+        // 默认值  没有传参 或者传的参数是undefined
+        // let a = (a,b,c=100) => {
+        //     console.log(a,b,c);
+        // }
+        // a(1,2,undefined);
+
+        // console.log(a.name);
+
+
+        // let a = (x) => {
+        //     console.log(x);
+        // }
+
+        // let a = x => x;
+        let a = (x=1) => {
+            return x;
+        }
+        console.log(a());
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+
+
+        
+        
+
+
+
+
+        
+
+
+
+
     </script>
-
-
-
-
+    
 </body>
-
 </html>
