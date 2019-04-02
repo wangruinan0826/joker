@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // var和let的区别：
+        // 1.var声明的变量有变量提升，而let声明的变量没有变量提升；
+        // 2.var重复声明变量，而let不能重复声明变量；
+        // 3.let声明的变量有块级作用域；
+        // 4.let声明的变量有临时失效区（暂时性死区）。
+        
+        // 变量提升 var声明的变量 会有变量提升 （当前作用域的最上边声明变量）
+        // 
+        // console.log(a);
+        // var a = 10;
+        // console.log(a);
+
+        //  b is not defined 
+        // console.log(b);
+        // let b = 10;
+
+        // var a = 10;
+        // var a = 20;
+        // let a = 10;
+        // let a = 20;
+
+        // console.log(a);
+
+        /*全局作用域 和  函数作用域 
+
+            访问变量的时候  当前作用域中找，如果当前的作用域没有 找上一层（父作用域）中找
+            ，如果父作用域没有接着向上找 .... 直到找到window 如果window下也没有 会返回 z is not defined
+            这个查找的过程成为  作用域链
+        */
+        // var z = 30;
+        // function fn(){
+        //     var x = 10;//局部变量   
+        //     y = 20 //全局变量
+
+        //     console.log(z);
+        // }
+        // fn();
+        // // console.log(x);
+        // console.log(y);
+        // window  
+        // var c = 1
+        // function fn1(){
+        //     // var a = 10;
+        //     function fn2(){
+        //         var b = 20;
+        //         // var a = 30;
+        //         console.log(z);
+        //     }
+        //     fn2();
+        // }
+        // fn1();
+
+        // var x = true;
+        // if(x){
+        //     let a = 10;
+        //     console.log(a);
+        // }
+        // //  a is not defined
+        // console.log(a);
+
+
+        // 4临时失效区（暂时性死区）  let声明的变量在当前作用域 不允许同名的变量进来
+
+        // let a = 10;
+        // function fn(){
+        //     // a is not defined
+        //     console.log(a);
+        //     let a = 20;
+        //     console.log(a);
+        // }
+        // fn();
+
+        var x = 100;
+        function fn2(){
+            console.log(x);
+            var x = 20;
+        }
+        fn2();
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>

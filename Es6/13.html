@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function * fn(){
+        //     console.log('开始');
+        //     let dataxx=yield request();
+        //     console.log('请求1已经成功，可以开始请求2');
+        //     console.log(dataxx);
+        // }
+        // let a=fn();
+        // console.log(a.next());
+
+        // function request(){
+        //     setTimeout(()=>{
+        //         let data=100;
+        //         console.log('请求1成功，返回数据data为'+data);
+        //         console.log(a.next(data));
+        //     },1000)
+        // }
+
+        async function fn(){
+            console.log('开始');
+            await req1();
+            console.log('请求1已经成功，可以开始请求2');
+            await req2();
+            console.log('请求2已经成功，可以开始请求3');
+            await req3();
+            console.log('请求3已经成功，可以开始请求4');
+        }
+        fn();
+
+        async function req1(){
+            return new Promise(function(resolve,reject){
+                setTimeout(()=>{
+                    console.log('请求1成功');
+                    resolve();
+                },1000)
+            })            
+        }
+        async function req2(){
+            return new Promise(function(resolve,reject){
+                setTimeout(()=>{
+                    console.log('请求2成功');
+                    resolve();
+                },2000)
+            })
+        }
+
+        async function req3(){
+            return new Promise(function(resolve,reject){
+                setTimeout(()=>{
+                    console.log('请求3成功');
+                    resolve();
+                },3000)
+            })
+        }
+
+        function fn(){
+            console.log('hahahahahaha');
+        }
+    </script>
+</body>
+</html>

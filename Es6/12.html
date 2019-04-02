@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let p1=new Promise((resolve,reject)=>{
+        //     setTimeout(()=>{
+        //         console.log('请求1成功');
+        //         resolve();
+        //     },1000)
+        // }).then(()=>{
+        //     console.log('请求2即将发送');
+        //     setTimeout(()=>{
+        //         console.log('请求2成功');
+        //     },2000)
+        // }).catch(()=>{
+        //     console.log('请求失败');
+        // })
+        
+        // console.log('hahaha');
+
+
+
+
+
+        let p1=new Promise(function(resolve,reject){
+            setTimeout(()=>{
+                console.log('1 ok');
+                resolve();
+            },1000)
+        }).then(function(){
+            return new Promise(function(resolve,reject){
+                console.log('2 ready');
+                setTimeout(()=>{
+                    console.log('2 ok')
+                    resolve();
+                },2000)
+            })
+        }).then(function(){
+            return new Promise(function(resolve,reject){
+                console.log('3 ready');
+                setTimeout(()=>{
+                    console.log('3 ok')
+                },3000)
+            })
+        }).catch(function(){
+            console.log('fail');
+        })
+    </script>
+</body>
+</html>
