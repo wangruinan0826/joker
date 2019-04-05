@@ -1,0 +1,53 @@
+$color:#ff0;
+
+#div1{
+    width: 200px;
+    height: 200px;
+    background: $color;
+    margin: {
+        top:50px;
+        left: 50px;
+    }
+    a{
+        color:pink;
+        &:hover{
+            color:blue;
+        }
+
+    }
+}
+@mixin triangle{
+    width: 0;
+    height: 0;
+    border: 10px solid #000;
+    border-color: transparent;
+    border-bottom-color: #000;
+}
+@mixin border($w,$h){
+    width: $w;
+    height: $h;;
+    border: 10px solid #000;
+    border-radius: 10px;
+}
+%ee{
+    width: 200px;
+    height: 200px;
+    background: #ff0000;
+}
+#div2{
+    .aa{
+        @include triangle();
+    }
+    .bb{
+        @include border(100px,200px);
+    }
+    .cc{
+        @include border(400px,400px);
+    }
+    .dd{
+        @extend .cc
+    }
+    .ff{
+        @extend %ee
+    }
+}

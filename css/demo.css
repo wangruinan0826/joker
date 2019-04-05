@@ -1,0 +1,43 @@
+#div1 {
+  width: 200px;
+  height: 200px;
+  background: #ff0;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+#div1 a {
+  color: pink;
+}
+
+#div1 a:hover {
+  color: blue;
+}
+
+#div2 .ff {
+  width: 200px;
+  height: 200px;
+  background: #ff0000;
+}
+
+#div2 .aa {
+  width: 0;
+  height: 0;
+  border: 10px solid #000;
+  border-color: transparent;
+  border-bottom-color: #000;
+}
+
+#div2 .bb {
+  width: 100px;
+  height: 200px;
+  border: 10px solid #000;
+  border-radius: 10px;
+}
+
+#div2 .cc, #div2 .dd {
+  width: 400px;
+  height: 400px;
+  border: 10px solid #000;
+  border-radius: 10px;
+}
