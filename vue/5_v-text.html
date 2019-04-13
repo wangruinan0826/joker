@@ -8,16 +8,26 @@
 </head>
 <body>
     <div id="app">
-        {{msg}}
+        <!-- {{ msg }} -->
+
+        <div v-text="str"></div>
+        <div v-html="str"></div>
     </div>
+    
+    
+
     <script src="vue.js"></script>
+
     <script>
         new Vue({
-            el:'#app',
-            data:{
-                msg:'Hello World!'
+            el: '#app', // 挂载元素
+            data: {
+                msg: 'Hello World',
+                str: '<h1>hhhh</h1>'
             }
-        })
+        });
+    
+    
     </script>
 </body>
 </html>
