@@ -1,0 +1,11 @@
+#div2{
+    width: 200px;
+    height: 200px;
+    background: #ffff00;
+    a{
+        color: pink;
+        &:hover{
+            color:red;
+        }
+    }
+}

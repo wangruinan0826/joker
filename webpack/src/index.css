@@ -1,0 +1,13 @@
+body{
+    background: #6666ff;
+}
+div{
+    background-image: url(./img/7.jpg);
+}
+img{
+    transform: rotate(45deg);
+}
+.b{
+    width: 200px;
+    height: 200px;
+}

@@ -7,10 +7,17 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="app">
+        {{msg}}
+    </div>
+    <script src="vue.js"></script>
     <script>
-        const arr=[1,2,3];
-        arr[1]=8;
-        console.log(arr)
+        new Vue({
+            el:'#app',
+            data:{
+                msg:'Hello World!'
+            }
+        })
     </script>
 </body>
 </html>

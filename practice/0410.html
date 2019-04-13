@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>1111111</li>
+        <li>2222222</li>
+        <li>3333333</li>
+        <li>4444444</li>
+        <li>5555555</li>
+    </ul>
+    <script>
+        //获取索引：
+        // var aLi=document.getElementsByTagName('li');
+        // for(var i=0;i<aLi.length;i++){
+        //     aLi[i].onclick=()=>{
+        //         console.log(i);
+        //     }
+        // }
+
+        // for(var i=0;i<aLi.length;i++){
+        //     aLi[i].index=i;
+        //     aLi[i].onclick=function(){
+        //         console.log(this.index);
+        //     }
+        // }
+
+        // for(var i=0;i<aLi.length;i++){
+        //     (function(i){
+        //         aLi[i].onclick=function(){
+        //             console.log(i);
+        //         }
+        //     })(i);
+        // }
+
+        // for(let i=0;i<aLi.length;i++){
+        //     aLi[i].onclick=function(){
+        //         console.log(i);
+        //     }
+        // }
+
+        //临时失效区、暂时性死区：
+        // let a=10;
+        // function fn(){
+        //     // console.log(a);
+        //     let a=20;
+        //     console.log(a);
+        // }
+        // fn()
+
+        // fn1()
+        // var b=30;
+        // function fn1(){
+        //     console.log(b);
+        //     var b=40;
+        //     console.log(b);
+        // }
+        
+        // var c=50;
+        // // fn2()
+        // var fn2=function(){
+        //     console.log(c)
+        //     var c=60;
+        //     console.log(c);
+        // }
+        // fn2()
+
+        // var obj={
+        //     name:'zs',
+        //     age:20,
+        //     say:function(){
+        //         console.log('saying');
+        //     }
+        // }
+
+        // var {name:xx,age,say}=obj;
+        // console.log(xx,age);
+        // say();
+
+        // function Person(name,age){
+        //     this.name=name;
+        //     this.age=age;
+        // }
+        // Person.prototype.say=()=>{
+        //     console.log('saying');
+        // }
+
+        // var p1=new Person('lisi',30);
+        // p1.say();
+
+        // function Corder(name,age){
+        //     Person.call(this,name,age);
+        // }
+        // Corder.prototype=new Person;
+        // Corder.prototype.constructor=Corder;
+        // Corder.prototype.code=function(){
+        //     console.log('coding');
+        // }
+
+        // var p2=new Corder('lisi',30);
+        // p2.say();
+        // p2.code();
+
+        // class Person{
+        //     constructor(name,age){
+        //         this.name=name;
+        //         this.age=age;
+        //     }
+        //     say(){
+        //         console.log('saying');
+        //     }
+        // }
+        // var p1=new Person('zs',20);
+        // p1.say();
+
+        // class Corder extends Person{
+        //     constructor(name,age){
+        //         super(name,age);
+        //     }
+        //     code(){
+        //         console.log('coding');
+        //     }
+        // }
+
+        // var p2=new Corder('lisi',30);
+        // p2.say();
+        // p2.code();
+
+        // var a=5,b=7;
+        // // var [a,b]=[b,a];
+
+        // a=[b,b=a][0];
+        // console.log(a,b)
+
+
+        // function fn(...rest){
+        //     console.log(rest);
+        // }
+
+        // fn(1,2,3,4,5,6,7)
+
+        // let str='1234';
+        // console.log(str.padEnd(8,'abc'));
+
+        let arr=[1,2,3,4,5,6,7];
+        // let arr1=arr.copyWithin(1,0,7);
+        // console.log(arr1);
+        let x=arr.find(function(val,index){
+            // console.log(val,index);
+            return index>2;
+        })
+        console.log(x)
+    </script>
+</body>
+</html>
