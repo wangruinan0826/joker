@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        .red{
+            background: #ff0036;
+        }
+    </style>
+</head>
+<body>
+    <div id="product">
+        <h1 class="text-center">Todolist</h1>
+        <form class="form-inline text-center">
+            <div class="form-group">
+              <label for="exampleInputName2">Name</label>
+              <input type="text" class="form-control" id="exampleInputName2" v-model='proname' placeholder="请输入商品名">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail2">price</label>
+              <input type="number" class="form-control" id="exampleInputEmail2" v-model='proprice' placeholder="请输入价格">
+            </div>
+            <button type="submit" class="btn btn-default" v-on:click.prevent='add()'>添加</button>
+        </form>
+        <table class="table table-bordered text-center"> 
+            <thead>
+                <td>选择</td>
+                <td>商品名称</td>
+                <td>商品价格</td>
+                <td>删除</td>
+            </thead>
+            <tbody>
+                <tr v-for='(item,index) in showlist':key='item.id' v-on:click='change(item.id)' :class="{red:item.isred}">
+                    <td><input type="checkbox" v-model='item.isred'></td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.price}}</td>
+                    <td><button type="button" class="btn btn-warning glyphicon-remove btn-xs" v-on:click.stop='del(item.id)'></button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="btn btn-danger btn-xs" v-on:click.prevent='remove()'>删除选中</button></td>
+                    <td colspan="3">总价是：{{total}}元</td>
+                </tr>
+            </tbody>
+        </table>
+        <form class="form-inline text-center">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="请输入搜索商品名" v-model='searchname'>
+            </div>
+            <button type="submit" class="btn btn-default" v-on:click.prevent='search()'>搜索</button>
+        </form>
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        let vm=new Vue({
+            el:'#product',
+            data:{
+                productlist:[
+                    {
+                        name:'衣服',
+                        price:123,
+                        isred:false,
+                        id:1
+                    },{
+                        name:'裤子',
+                        price:456,
+                        isred:false,
+                        id:2                    
+                    },{
+                        name:'鞋',
+                        price:222,
+                        isred:false,
+                        id:3                 
+                    },{
+                        name:'手机',
+                        price:555,
+                        isred:false,
+                        id:4                      
+                    },{
+                        name:'帽子',
+                        price:111,
+                        isred:false,
+                        id:5                    
+                    }
+                ],
+                proname:'',
+                proprice:0,
+                searchname:'',
+                showlist:[
+                    {
+                        name:'衣服',
+                        price:123,
+                        isred:false,
+                        id:1
+                    },{
+                        name:'裤子',
+                        price:456,
+                        isred:false,
+                        id:2                    
+                    },{
+                        name:'鞋',
+                        price:222,
+                        isred:false,
+                        id:3                 
+                    },{
+                        name:'手机',
+                        price:555,
+                        isred:false,
+                        id:4                      
+                    },{
+                        name:'帽子',
+                        price:111,
+                        isred:false,
+                        id:5                    
+                    }
+                ],
+            },
+            // methods:{
+            //     add(){
+            //         this.productlist.push({
+            //             name:this.proname,
+            //             price:this.proprice,
+            //             isred:false,
+            //         })
+            //         this.showlist=[...this.productlist];
+            //     },
+            //     change(item){
+            //         item.isred=!item.isred
+            //     },
+            //     remove(){
+            //         let removelist=this.productlist.filter((item,index)=>{
+            //             return !item.isred;
+            //         });
+            //         this.productlist=[...removelist];
+            //         this.showlist=[...this.productlist];
+            //     },
+            //     del(index){
+            //         this.productlist.splice(index,1);
+            //         this.showlist=[...this.productlist]
+            //     },
+            //     search(){
+            //         let searchlist=this.productlist.filter((item,index)=>{
+            //             return item.name.includes(this.searchname);
+            //         });
+            //         this.showlist=[...searchlist];
+            //     }
+            // },
+            // computed:{
+            //     total(item){
+            //         let sum=0;
+            //         this.showlist.forEach((item,index)=>{
+            //             if(item.isred){
+            //                 sum=sum+parseFloat(item.price);
+            //             }
+            //         })
+            //         return sum;
+            //     }
+            // }
+            methods:{
+                add(){
+                    this.productlist.push({
+                        name:this.proname,
+                        price:this.proprice,
+                        isred:false,
+                        id:Symbol()
+                    })
+                    this.showlist=[...this.productlist]
+                },
+                change(id){
+                    // let changelist=this.productlist.map((item,index)=>{
+                    //     if(item.id==id){
+                    //         item.isred=!item.isred;
+                    //     }
+                    //     return item;
+                    // })
+                    // this.productlist=[...changelist];
+                    // this.showlist=[...this.productlist];
+
+                    // this.productlist.forEach((item,index)=>{
+                    //     if(item.id==id){
+                    //         item.isred=!item.isred;
+                    //     }
+                    // })
+                    // this.showlist=[...this.productlist]
+
+                    this.showlist.forEach((item,index)=>{
+                        if(item.id==id){
+                            item.isred=!item.isred;
+                        }
+                    })
+                },
+                remove(){
+                    let removelist=this.productlist.filter((item,index)=>{
+                        return !item.isred
+                    })
+                    this.productlist=[...removelist]
+                    this.showlist=[...this.productlist]
+                },
+                del(id){
+                    let dellist=this.productlist.filter((item,index)=>{
+                        return item.id!=id
+                    })
+                    this.productlist=[...dellist]
+                    this.showlist=[...this.productlist]
+                },
+                search(){
+                    let searchlist=this.productlist.filter((item,index)=>{
+                        return item.name.includes(this.searchname)
+                    })
+                    this.showlist=[...searchlist]
+                }
+            },
+            computed:{
+                total(){
+                    let sum=0;
+                    this.showlist.forEach((item,index)=>{
+                        if(item.isred){
+                            sum=sum+parseFloat(item.price);
+                        }
+                    })
+                    return sum
+                }
+            }
+        })
+    </script>
+</body>
+</html>
