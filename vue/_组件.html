@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div id="app1">
+        <demo></demo>
+    </div>
+    <div id="app2">
+        <demo></demo>
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        Vue.component('demo',{
+            template:'<h1>hahaha</h1>'
+        })
+        let vm1=new Vue({
+            el:'#app1'
+        })
+        let vm2=new Vue({
+            el:'#app2'
+        })
+    </script> -->
+
+    <div id="app">
+        <demo name='hahaha' age=10></demo>
+        <demo name='hehehe' age=20></demo>
+    </div>
+    <template id='temp'>
+        <div>
+            <h2>{{name}} {{age}}</h2>
+        </div>
+    </template>
+    <script src="vue.js"></script>
+    <script>
+        let vm=new Vue({
+            el:'#app',
+            components:{
+                'demo':{
+                    template:'#temp',
+                    props:['name','age']
+                }
+            }
+        })   
+    </script>
+</body>
+</html>
