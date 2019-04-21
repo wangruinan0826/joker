@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="app">
+        <demo name="hahhahah" age="10">
+            <h3 slot="slot1">内容solt上</h3>
+            <div slot="slot2">
+                <p>solt下sdfghjk;l';'lkjhgfdhjkl;'lkjhgfxfghjk</p>
+                <span>1111111111111111</span>
+            </div>
+        </demo>
+        <demo name="xixiixix" age="30"></demo>
+        <!-- <demo name="hehehehhe" age="20">
+            <h3>内容呵呵呵呵</h3>
+        </demo>
+        <demo name="xixiixix" age="30"></demo> -->
+    </div>
+    <template id="temp">
+        <div>
+            <slot name="slot1"></slot>
+            <h2>{{name}} --- {{age}}</h2>
+            <div>
+                <slot name="slot2"></slot>
+            </div>
+        </div>
+    </template>
+    <script src="vue.js"></script>
+    <!-- 父组件向子组件传参 使用props 
+    -->
+    <script>
+        let vm = new Vue({
+            el:"#app",
+            data:{
+                msg:'haha'
+            },
+            components:{
+                "demo":{
+                    template:"#temp",
+                    props:["name","age"],
+                    data:function(){
+                        return {
+                            xx:'hehe'
+                        }
+                    }
+                }
+            }
+        })
+
+
+
+
+        
+
+        
+
+
+    </script>
+
+    
+</body>
+</html>
