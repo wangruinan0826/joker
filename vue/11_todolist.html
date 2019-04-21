@@ -132,14 +132,14 @@
                 },
                 change(id){
                     // item.isRed=!item.isRed
-                    let changelist=this.productlist.map((obj,index)=>{
-                        if(obj.id==id){
-                            obj.isRed=!obj.isRed;
-                        }
-                        return obj;
-                    })
-                    this.productlist=[...changelist];
-                    this.showlist=[...this.productlist];
+                    // let changelist=this.productlist.map((obj,index)=>{
+                    //     if(obj.id==id){
+                    //         obj.isRed=!obj.isRed;
+                    //     }
+                    //     return obj;
+                    // })
+                    // this.productlist=[...changelist];
+                    // this.showlist=[...this.productlist];
                     // this.productlist.forEach((obj,index)=>{
                     //     if(obj.id==id){
                     //         obj.isRed=!obj.isRed;
@@ -147,6 +147,11 @@
                     //     return obj;
                     // })
                     // this.showlist=[...this.productlist];
+                    this.showlist.forEach((item,index)=>{
+                        if(item.id==id){
+                            item.isRed=!item.isRed;
+                        }
+                    })
                 },
                 // total(){
                 //     let sum=0;
