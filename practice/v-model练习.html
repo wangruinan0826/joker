@@ -22,7 +22,7 @@
             <p>订单费用信息</p>
             <ul>
                 <li v-for='obj in list'>
-                   {{obj.name}} {{obj.price}}
+                    {{obj.name}} {{obj.price}}
                 </li>
             </ul>
         </div>
@@ -53,20 +53,20 @@
                         price:400
                     }
                 ],
-                isshow:false
-            },
-            methods:{
-                remove(){
-                    this.list.splice(1);
-                }
+                isshow:false,
             },
             computed:{
                 total(){
                     let sum=0;
-                    this.list.forEach((item,index)=>{
-                        sum=sum+item.price;
+                    this.list.forEach((obj,index)=>{
+                        sum=sum+obj.price;
                     })
                     return sum;
+                }
+            },
+            methods:{
+                remove(){
+                    this.list.splice(1);
                 }
             }
         })
