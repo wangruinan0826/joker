@@ -16,8 +16,8 @@
 </head>
 <body>
     <div id="app">
-        <demo title="登录" v-on:close='fn'>
-            <h1>这里是内容啊！！！！！！！</h1>
+        <demo title='登录' v-on:close='fn'>
+            <p>这里是内容！！！！！！！</p>
         </demo>
         <demo title="注册" v-on:close='fn'>
             <div>
@@ -36,9 +36,9 @@
                 <span>{{title}}</span>
                 <span v-on:click="$emit('close',title)">[X]</span>
             </div>
-            <div class="dialog-content">
+            <div class="dialog-conttent">
                 <slot></slot>
-            </div>
+            </div>   
         </div>
     </template>
     <script src="vue.js"></script>
@@ -48,15 +48,15 @@
             data:{
 
             },
-            methods:{
-                fn(){
-                    console.log('hahaha')
-                }
-            },
             components:{
                 'demo':{
                     template:'#dial',
                     props:['title']
+                }
+            },
+            methods:{
+                fn(){
+                    console.log('hahahahahahaha!');
                 }
             }
         })

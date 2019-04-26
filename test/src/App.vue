@@ -1,31 +1,59 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div>
+    <div id="app">
+      <router-link to='/a'>a页面</router-link>
+      <!-- <router-link to='/b'>b页面</router-link> -->
+      <router-link :to="{name:'b',params:{name:'zs',id:123}}">b页面</router-link>
+      <router-link to="/c/666">c页面</router-link>
+      <router-link to="/d/777">d页面重定向到c页面</router-link>
+      <router-link to="/zxy">alias别名</router-link>
     </div>
-    <router-view/>
+    <transition name='fade'>
+      <router-view/>
+    </transition>
+    <button v-on:click='goprev()'>&lt;</button>
+    <button v-on:click='gonext()'>&gt;</button>
+    <button v-on:click='gohome()'>home</button>
   </div>
 </template>
 
+<script>
+export default {
+    methods:{
+        goprev(){
+          this.$router.go(-1);
+        },
+        gonext(){
+          this.$router.go(1);
+        },
+        gohome(){
+          this.$router.push('/');5
+        }
+    }
+}
+</script>
+
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+    .fade-enter{
+      /* opacity:0 */
+      transform:translateX(-100%)
+    }
+    .fade-enter-to{
+      /* opacity:1 */
+      transform:translateX(0)
+    }
+    .fade-enter-active{
+      transition:transform 1s ease
+    }
+    .fade-leave{
+      /* opacity:1 */
+      transform:translateX(0)
+    }
+    .fade-leave-to{
+      /* opacity:0 */
+      transform:translateX(100%)
+    }
+    .fade-leave-active{
+      transition:transform 1s ease
+    }
 </style>
