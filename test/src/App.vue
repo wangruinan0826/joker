@@ -27,7 +27,7 @@ export default {
           this.$router.go(1);
         },
         gohome(){
-          this.$router.push('/');5
+          this.$router.push('/');
         }
     }
 }
