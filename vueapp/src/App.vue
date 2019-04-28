@@ -52,15 +52,11 @@
         }
       },
       created(){
-        // this.menu.forEach((item,index)=>{
-        //   if(item.path==this.$route.path){
-        //     this.selectMenu=item;
-        //   }
-        // })
-        let obj=this.menu.filter((item,index)=>{
-            return item.path==this.$route.path;
+        this.menu.forEach((item,index)=>{
+          if(item.path==this.$route.path){
+            this.selectMenu=item;
+          }
         })
-        selectMenu=obj;
       }
   }
 </script>
