@@ -29,7 +29,7 @@ export default new Router({
     },
     {
       path:'/',
-      redirect:Movie
+      redirect:'/movie'
     }
   ]
 })
