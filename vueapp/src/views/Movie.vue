@@ -1,7 +1,7 @@
 <template>
     <div class="movie-container">
         <ul>
-            <li v-for='(item,index) in movieList' :key='index' class="movie-list">
+            <li v-for='(item,index) in movieList' :key='index' class="movie-list" v-on:click='goDetail(item.id)'>
                 <img class="movie-img" :src="item.images.medium" alt="">
                 <div class="movie-text">
                     <h4>{{item.title}}</h4>
@@ -74,6 +74,9 @@
                     }
                     console.log(this.movieList);
                 })
+            },
+            goDetail(id){
+                this.$router.push('/moviedetail/'+id)
             }
         },
     }
@@ -93,9 +96,9 @@
     .movie-text{
         flex:1
     }
-    .movie-container{
-        /* padding: 0 0.2rem; */
-    }
+    /* .movie-container{
+        padding: 0 0.2rem;
+    } */
     .loading{
         position: fixed;
         left: 50%;

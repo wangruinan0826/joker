@@ -27,6 +27,7 @@
            axios.get('/data/musicdata.json')
            .then((result)=>{
                 result.data.musicData.forEach((obj)=>{
+                    //属性不对应，创建一个新对象把属性重新写一遍。
                     let obj1 = {
                        title:obj.title,
                        author:obj.author,

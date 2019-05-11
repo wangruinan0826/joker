@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img :src="obj.bg" v-for="(obj,index) in musicList" :key="index" @click="goList()"/>
+        <img :src="obj.bg" v-for="(obj,index) in musicList" :key="index" v-on:click="goList()"/>
     </div>
 </template>
 
