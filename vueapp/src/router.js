@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Movie from '@/views/Movie.vue'
 import Music from '@/views/Music.vue'
+import MusicList from '@/views/MusicList.vue'
 import Book from '@/views/Book.vue'
 import Photo from '@/views/Photo.vue'
 
@@ -18,6 +19,10 @@ export default new Router({
     {
       path:'/music',
       component:Music
+    },
+    {
+      path:'/musiclist',
+      component:MusicList
     },
     {
       path:'/book',

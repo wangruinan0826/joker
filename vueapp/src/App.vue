@@ -18,28 +18,28 @@
             {
               name:'电影',
               path:'/movie',
-              bg:'#f00'
+              bg:'#ff3366'
             },
             {
               name:'音乐',
               path:'/music',
-              bg:'#ff0'
+              bg:'#ffcc33'
             },
             {
               name:'书籍',
               path:'/book',
-              bg:'#00f'
+              bg:'#6666ff'
             },
             {
               name:'图片',
               path:'/photo',
-              bg:'#0f0'
+              bg:'#33cc33'
             },
           ],
           selectMenu:{
               name:'电影',
               path:'/movie',
-              bg:'#f00'
+              bg:'#ff3366'
           }
         }
       },

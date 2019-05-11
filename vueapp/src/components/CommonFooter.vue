@@ -21,7 +21,7 @@
         position: fixed;
         bottom: 0;
         width: 100%;
-        background-color: #ff0036;
+        /* background-color: #ff0036; */
         color: #fff;
     }
     .footer-list{ 

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img v-for="(item,index) in musicList" :key='index' :src="item.bg" alt="">
+        <img :src="obj.bg" v-for="(obj,index) in musicList" :key="index" @click="goList()"/>
     </div>
 </template>
 
@@ -8,22 +8,27 @@
     import axios from 'axios'
     export default {
         data(){
-            return{
+            return {
                 musicList:[]
             }
         },
-        created(){
+        created() {
             axios.get('/data/musiclist.json')
             .then((result)=>{
-                this.musicList=result.data.albums;
-                console.log(result.data.albums);
+                this.musicList = result.data.albums;
             })
         },
+        methods: {
+            goList(){
+                this.$router.push('/musiclist')
+            }
+        }
     }
 </script>
 
 <style scoped>
     img{
-        width: 50%;
+       width:50%; 
     }
+
 </style>

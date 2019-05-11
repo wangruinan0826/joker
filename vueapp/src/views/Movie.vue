@@ -52,9 +52,10 @@
             this.getMovie();
             window.onscroll=()=>{
                 let scrollTop=document.documentElement.scrollTop;
-                let clinetHeight=document.documentElement.clinetHeight;
+                let clientHeight=document.documentElement.clientHeight;
                 let height=document.documentElement.scrollHeight;
-                if(scrollTop+clinetHeight==height&&!this.isBottom){
+                console.log(scrollTop,clientHeight,height)
+                if(scrollTop+clientHeight==height&&!this.isBottom){
                     this.getMovie();
                 }
             }
@@ -62,9 +63,10 @@
         methods:{
             getMovie(){
                 this.isShow=true;
-                // axios.get('https://bird.ioliu.cn/v1?url=https://api.douban.com/v2/movie/in_theaters?city=广州&start='+this.movieList.length+'&count=10')
-                axios.get('/data/movie0.json')
+                axios.get('https://bird.ioliu.cn/v1?url=https://api.douban.com/v2/movie/in_theaters?city=广州&start='+this.movieList.length+'&count=10')
+                // axios.get('/data/movie0.json')
                 .then((result)=>{
+                    console.log(result);
                     this.isShow=false;
                     this.movieList=[...this.movieList,...result.data.subjects];
                     if(this.movieList.length==result.data.total){
@@ -81,6 +83,7 @@
     .movie-list{
         display: flex;
         border-bottom: 1px solid #cccccc;
+        padding: 0.2rem 0;
     }
     .movie-img{
         width: 100px;
@@ -91,7 +94,7 @@
         flex:1
     }
     .movie-container{
-        padding: 0 0.2rem;
+        /* padding: 0 0.2rem; */
     }
     .loading{
         position: fixed;
