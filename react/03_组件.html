@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <div id="app"></div>
+
+        <script src="react.development.js"></script>
+        <script src="react-dom.development.js"></script>
+        <script src="browser.min.js"></script>
+    
+        <script type="text/babel">
+            //两种定义组件方式对比：
+
+            //1.箭头函数：
+            // const Hello=()=>{
+            //     return(
+            //         <div>
+            //             <p>1234567</p>
+            //         </div>
+            //     )
+            // }
+
+            //2.类继承：
+            // class Hello extends React.Component{
+            //     constructor(params){
+            //         super(params)
+            //     }
+            //     render(){
+            //         return(
+            //             <div>
+            //                 <p>1234567</p>
+            //             </div>
+            //         )
+            //     }
+            // }
+
+            class Hello extends React.Component{
+                constructor(params){
+                    super(params)
+                }
+                render(){
+                    return(
+                        <div>
+                            <p>{this.props.name}</p>
+                            <p>{this.props.content}</p>
+                            {this.props.children}
+                        </div>
+                    )
+                }
+            }
+
+            ReactDOM.render(
+                <Hello name='hahaha' content='hehehe'>
+                    <h3>1234567</h3>
+                </Hello>,
+                document.getElementById('app')
+            )
+        </script>
+</body>
+</html>
