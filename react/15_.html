@@ -14,30 +14,19 @@
     <script src="browser.min.js"></script>
 
     <script type="text/babel">
-        class Asd extends React.Component{
+        class A extends React.Component{
             constructor(params){
                 super(params)
-                this.state={
-                    num:123
-                }
-                this.add=this.add.bind(this)
-            }
-            add(){
-                this.setState({num:this.state.num+1})
-                
             }
             render(){
                 return(
-                    <div>
-                        {this.state.num}
-                        <button onClick={this.add}>haha</button>
-                    </div>
+                    <div></div>
                 )
             }
         }
 
         ReactDOM.render(
-            <Asd></Asd>,
+            <A></A>,
             document.getElementById('app')
         )
     </script>

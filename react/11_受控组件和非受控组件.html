@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .aa{
+            color: #ff0036;
+        }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script src="react.development.js"></script>
+    <script src="react-dom.development.js"></script>
+    <script src="browser.min.js"></script>
+    <!-- 用户名为非受控组件,手动读取数据;密码为受控组件，自动收集数据。 -->
+    <script type="text/babel">
+        class A extends React.Component{
+            constructor(params){
+                super(params)
+                this.state={
+                    pwd:'请输入密码'
+                }
+                this.show=this.show.bind(this);
+                this.change=this.change.bind(this);
+            }
+            show(){
+                alert('用户名是'+this.myInput.value+'密码是'+this.state.pwd)
+            }
+            change(event){
+                this.setState({
+                    pwd:event.target.value
+                })
+            }
+            render(){
+                let style={
+                    color:'#ff0036',
+                    background:'#0000ff'
+                }
+                return(
+                    <div>
+                        用户名：<input className='aa' type='text' ref={input=>this.myInput=input}/>
+                        密码：<input style={style} type='password' onChange={this.change}/>
+                        <button onClick={this.show}>点击</button>
+                    </div>
+                )
+            }
+        }
+
+        ReactDOM.render(
+            <A></A>,
+            document.getElementById('app')
+        )
+    </script>
+</body>
+</html>
