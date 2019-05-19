@@ -3,6 +3,7 @@ import {BrowserRouter as Router,Link,Route,Redirect} from 'react-router-dom';
 import A from './components/A.js'
 import B from './components/B.js'
 import C from './components/C.js'
+import F from './components/F.js'
 import Children from './components/Children.js'
 import Home from './components/Home.js'
 
@@ -28,6 +29,7 @@ function App() {
             <Link to='/children'>Children页面</Link>
             -------
             <Link to='/e'>E重定向页面</Link>
+
             <Route exact path='/' component={Home}></Route>
             <Route exact path='/a/:id' component={A}></Route>
             <Route exact path='/b' component={B}></Route>
@@ -44,6 +46,8 @@ function App() {
                 return <Redirect to='/'></Redirect>
             }}></Route>
             <Jump to='xxx'>xxxxxxx</Jump>
+            <hr></hr>
+            <F></F>
 
             {/* <Switch>
               <Route path='/a/:id' component={A}></Route>

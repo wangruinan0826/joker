@@ -5,6 +5,9 @@ export default class B extends Component {
     return (
       <div>
         BBBBBBB
+        <button onClick={()=>{
+            this.props.history.goBack();
+        }}>&lt;返回上一页</button>
       </div>
     )
   }
