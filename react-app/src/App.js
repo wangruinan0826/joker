@@ -6,15 +6,29 @@ import C from './components/C.js'
 import F from './components/F.js'
 import Children from './components/Children.js'
 import Home from './components/Home.js'
+import store from './store'
+import {add,reduce} from './action'
+import {connect} from 'react-redux'
 
 let Jump=(props)=>{
     return <Link to={props.to}>{props.children}</Link>
 }
 
-function App() {
+function App(props) {
   return (
     <div className="App">
-        hahaha
+        <div>hahaha</div>
+        <div>{props.aa}</div>
+        <button onClick={()=>{
+            console.log('我要修改num值');
+            // store.dispatch(add(2));
+            props.add();
+        }}>add</button>
+        <button onClick={()=>{
+            console.log('我要修改num值');
+            store.dispatch(reduce(5));
+        }}>reduce</button>
+        <hr></hr>
         <Router>
             <Link to='/'>首页</Link>
             -------
@@ -58,5 +72,10 @@ function App() {
     </div>
   );
 }
+let mapStateToProps=(state)=>{
+    return {
+        aa:state.num
+    }
+}
 
-export default App;
+export default connect(mapStateToProps,{add})(App);
