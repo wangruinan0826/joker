@@ -1,0 +1,10 @@
+.aa{
+    position: fixed;
+    bottom: 0;
+    height: 20px;
+    line-height: 20px;
+    background: #cccccc;
+    width: 100%;
+}
+
+

@@ -4,9 +4,8 @@ import {Row,Col} from 'antd'
 import NavLeft from './components/NavLeft'
 import CHeader from './components/CHeader'
 import CFooter from './components/CFooter'
-import Home from './page/Home/index'
 
-function App() {
+function App(props) {
   return (
     <div className="App">
         <Row>
@@ -15,8 +14,8 @@ function App() {
           </Col>
           <Col span={20}>
             <CHeader></CHeader>
-            <Home></Home>
-            <CFooter/>
+            {props.children}
+            <CFooter></CFooter>
           </Col>
         </Row>
     </div>
