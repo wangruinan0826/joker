@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //找符合条件的字符串
+        let str="00110011";
+        function fn(str){
+            let arr=str.match(/^(0+|1+)/g);
+            let i=arr[0];
+            let j=(i[0]^1).toString().repeat(i.length); //i[0]=1和1亦或为0，i[0]=0和1亦或为1
+            let reg=new RegExp(`^(${i}${j})`);
+            if(reg.test(str)){
+                return RegExp.$1;
+            }else{
+                return "";
+            }
+        }
+        function countBinarySubstrings(s){
+            let res=[];
+            for(let i=0;i<s.length-1;i++){
+                let r=fn(s.slice(i));
+                if(r){
+                    res.push(r);
+                }
+            }
+            return res;
+        }
+        console.log(countBinarySubstrings(str))    
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=["","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"];
+        //得到数字对应的码
+        function letterCombinations(str){
+            let num=str.split("");
+            let code=[];
+            num.forEach((item)=>{
+                code.push(arr[item]);
+            });
+            return fn(code);
+        }
+        //排列组合
+        function fn(arr){
+            let res=[];
+            for(let i=0;i<arr[0].length;i++){
+                for(let j=0;j<arr[1].length;j++){
+                    res.push(arr[0][i]+arr[1][j]);
+                }
+            }
+            arr.splice(0,2,res);
+            if(arr.length>1){
+                fn(arr);
+            }
+            return arr;
+        }
+        console.log(letterCombinations("234567"));
+    </script>
+</body>
+</html>
