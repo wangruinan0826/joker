@@ -28,11 +28,43 @@
             }
         }
 
-        let nl=new NodeList([5,3,2,7,1]);
+        //交换两个位置的值
+        let swap=(p,q)=>{
+            [p.val,q.val]=[q.val,p.val];
+        }
+        //找到基准值
+        let pos=(begin,end)=>{
+            let val=begin.val;
+            let p=begin;
+            let q=begin.next;
+            while(q!=end){
+                if(q.val<val){
+                    swap(p.next,q);
+                    p=p.next;
+                    q=q.next;
+                }else{
+                    q=q.next;
+                }
+            }
+            swap(p,begin); 
+            return p;
+        }
+        let sort=(begin,end)=>{
+            if(begin!=end){
+                let obj=pos(begin,end);//找到的基准值
+                sort(begin,obj);
+                sort(obj.next,end);
+            }
+        }
+
+        let nl=new NodeList([5,3,2,7,1,6]);
+        sort(nl);
         while(nl){
             console.log(nl.val);
             nl=nl.next;
         }
+
+        //nlog(n) 快速排序
     </script>
 </body>
 </html>
