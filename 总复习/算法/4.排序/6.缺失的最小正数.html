@@ -27,24 +27,34 @@
             // return r.pop()+1;
 
             //第二种
+            // for(let i=0;i<r.length;i++){
+            //     let min=i;
+            //     for(let j=i;j<r.length;j++){
+            //         if(r[j]<r[min]){
+            //             min=j;
+            //         }   
+            //     }
+            //     if(i!=min){
+            //         [arr[i],arr[min]]=[arr[min],arr[i]];
+            //     }
+            //     if(i>0){
+            //         if(r[i]-r[i-1]!=1){
+            //             return r[i-1]+1;
+            //         }
+            //     }else{
+            //         if(r[0]!=1){
+            //             return 1;
+            //         }
+            //     }
+            // }
+
+            //第三种
             for(let i=0;i<r.length;i++){
-                let min=i;
-                for(let j=i;j<r.length;j++){
-                    if(r[j]<r[min]){
-                        min=j;
-                    }   
+                if(r.indexOf(i+1)===-1){
+                    return i+1;
                 }
-                if(i!=min){
-                    [arr[i],arr[min]]=[arr[min],arr[i]];
-                }
-                if(i>0){
-                    if(r[i]-r[i-1]!=1){
-                        return r[i-1]+1;
-                    }
-                }else{
-                    if(r[0]!=1){
-                        return 1;
-                    }
+                if(i==r.length-1){
+                    return i+2;
                 }
             }
         }
