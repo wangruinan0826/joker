@@ -6,7 +6,8 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
       count:0,
-      msg:'hahaha'
+      msg:'hahaha',
+      shuzhi:100
   },
   mutations: {
       add(state,num){
@@ -14,6 +15,12 @@ export default new Vuex.Store({
       },
       reduce(state,num){
         state.count=state.count-num;
+      },
+      jia(state,num){
+        state.shuzhi+=num;
+      },
+      jian(state,num){
+        state.shuzhi-=num
       }
   },
   getters:{

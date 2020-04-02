@@ -8,6 +8,7 @@ import Test2 from './views/Test2.vue'
 import C from './views/C.vue'
 import Error from './views/Error.vue'
 import Count from './views/Count.vue'
+import Jisuan from './views/Jisuan.vue'
 
 Vue.use(Router)
 
@@ -57,6 +58,10 @@ export default new Router({
     {
       path:'/count',
       component:Count
+    },
+    {
+      path:'/jisuan',
+      component:Jisuan
     }
   ]
 })

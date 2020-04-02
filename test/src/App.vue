@@ -7,6 +7,7 @@
       <router-link to="/c/666">c页面</router-link>
       <router-link to="/d/777">d页面重定向到c页面</router-link>
       <router-link to="/zxy">alias别名</router-link>
+      <router-link to="/jisuan">计算练习页面</router-link>
     </div>
     <transition name='fade'>
       <router-view/>
